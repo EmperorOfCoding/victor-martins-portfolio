@@ -7,12 +7,18 @@
     "cta": "Ver Mis Proyectos",
     "socialGithub": "Perfil de GitHub",
     "socialLinkedin": "Perfil de LinkedIn",
-    "socialEmail": "Envíame un correo"
+    "socialEmail": "Envíame un correo",
+    "availableForWork": "Disponible para trabajar",
+    "developerBadge": "<Developer />",
+    "scroll": "Desplazar"
   },
   "about": {
     "title": "Sobre Mí",
-    "bio1": "¡Hola! Soy Victor, un ingeniero de software apasionado por crear soluciones elegantes para problemas complejos. Mi viaje en la programación comenzó en 2015 cuando decidí experimentar creando temas personalizados para una plataforma de blogs — ¡descubrí que hackear un tema personalizado me enseñó mucho sobre HTML y CSS!",
-    "bio2": "Avanzando hasta hoy, he tenido el privilegio de trabajar en startups, agencias y grandes corporaciones. Mi enfoque principal actualmente es construir productos accesibles e inclusivos en una gran empresa tecnológica para una variedad de clientes.",
+    "bio1": "¡Hola! Mi nombre es Victor, soy estudiante de Ingeniería de Software, actualmente en mi cuarto semestre, y tengo una gran pasión por crear soluciones simples, intuitivas y efectivas para problemas complejos.",
+    "bio2": "Mi viaje en la programación comenzó en 2023 en la Universidad Federal de Bahía (UFBA), donde tuve mi primer contacto con C++. Durante este período, resolví diversos problemas computacionales que me ayudaron a consolidar conceptos fundamentales de programación como lógica, estructuras de control, estructuras de datos básicas y resolución de problemas.",
+    "bio3": "Después de este inicio, me uní a FIAP - Faculdade de Informática e Administração Paulista, donde, ya en el primer año, profundicé mis conocimientos en HTML, CSS, JavaScript y Python. Durante este período, participé en diversos proyectos grupales, actuando como organizador y líder, lo que contribuyó significativamente al desarrollo de habilidades técnicas y conductuales como el trabajo en equipo, la comunicación y el liderazgo técnico.",
+    "bio4": "Aún en mi primer año de universidad, fui aprobado para un programa de capacitación en AOOP (An NTT Data Company). Desde entonces, he sido ascendido dos veces en el mismo año, trabajando actualmente como Consultor Técnico Junior III, cargo en el cual sigo desarrollando mis habilidades profesionales y técnicas en el día a día corporativo.",
+    "bio5": "Mi compromiso profesional está directamente ligado a mis principios morales y a mi fe en Dios. Creo que mi propósito es utilizar la tecnología como una herramienta para impactar positivamente la vida de miles de personas, creando aplicaciones que generen valor real y contribuyan al desarrollo de la sociedad.",
     "skillsTitle": "Aquí están algunas tecnologías con las que he estado trabajando recientemente:"
   },
   "projects": {

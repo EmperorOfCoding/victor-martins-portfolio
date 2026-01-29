@@ -43,20 +43,20 @@ export function ExperienceSection() {
 
   return (
     <div className="h-full flex flex-col">
-      <h2 className="text-xl md:text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-        <span className="text-primary font-mono text-base">02.</span>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
+        <span className="text-primary font-mono text-sm sm:text-base">02.</span>
         {t('title')}
         <span className="flex-1 h-px bg-border" />
       </h2>
-      <div className="flex flex-col gap-4 flex-1 min-h-0">
-        <div className="flex overflow-x-auto border-b border-border">
+      <div className="flex flex-col gap-3 sm:gap-4 flex-1 min-h-0">
+        <div className="flex overflow-x-auto border-b border-border -mx-4 sm:mx-0 px-4 sm:px-0">
           {experiences.map((exp, index) => (
             <button
               key={exp.company}
               onClick={() => setActiveTab(index)}
               type="button"
               className={cn(
-                "px-4 py-2 text-xs font-mono whitespace-nowrap transition-all",
+                "px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-xs font-mono whitespace-nowrap transition-all",
                 "border-b-2 -mb-px",
                 activeTab === index
                   ? "text-primary border-primary bg-primary/5"
@@ -68,29 +68,29 @@ export function ExperienceSection() {
           ))}
         </div>
         <div className="flex-1 overflow-y-auto">
-          <div className="space-y-3">
-            <h3 className="text-base font-medium text-foreground">
+          <div className="space-y-2 sm:space-y-3">
+            <h3 className="text-sm sm:text-base font-medium text-foreground">
               {t(`company${activeTab + 1}.role`)}{" "}
               <span className="text-primary">@ {experiences[activeTab].company}</span>
             </h3>
-            <p className="text-xs font-mono text-muted-foreground">
+            <p className="text-[10px] sm:text-xs font-mono text-muted-foreground">
               {t(`company${activeTab + 1}.period`)}
             </p>
-            <ul className="space-y-2">
-              <li className="flex gap-2 text-muted-foreground text-sm">
-                <span className="text-primary mt-1">▹</span>
+            <ul className="space-y-1.5 sm:space-y-2">
+              <li className="flex gap-1.5 sm:gap-2 text-muted-foreground text-xs sm:text-sm">
+                <span className="text-primary mt-0.5 sm:mt-1 flex-shrink-0">▹</span>
                 <span>{t(`company${activeTab + 1}.desc1`)}</span>
               </li>
-              <li className="flex gap-2 text-muted-foreground text-sm">
-                <span className="text-primary mt-1">▹</span>
+              <li className="flex gap-1.5 sm:gap-2 text-muted-foreground text-xs sm:text-sm">
+                <span className="text-primary mt-0.5 sm:mt-1 flex-shrink-0">▹</span>
                 <span>{t(`company${activeTab + 1}.desc2`)}</span>
               </li>
             </ul>
-            <div className="flex flex-wrap gap-2 pt-2">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
               {experiences[activeTab].technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-2 py-1 text-xs font-mono bg-primary/10 text-primary rounded-full"
+                  className="px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-mono bg-primary/10 text-primary rounded-full"
                 >
                   {tech}
                 </span>
