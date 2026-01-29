@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "greeting": "Hola, mi nombre es",
+    "name": "Victor Martins",
+    "tagline": "Construyo cosas para la web.",
+    "description": "Soy estudiante de ingeniería de software y me especializo en la creación de experiencias digitales excepcionales. Actualmente, me centro en el desarrollo de productos accesibles y centrados en el usuario que amplían los límites de lo posible en la web.",
+    "cta": "Ver Mis Proyectos",
+    "socialGithub": "Perfil de GitHub",
+    "socialLinkedin": "Perfil de LinkedIn",
+    "socialEmail": "Envíame un correo"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "bio1": "¡Hola! Soy Victor, un ingeniero de software apasionado por crear soluciones elegantes para problemas complejos. Mi viaje en la programación comenzó en 2015 cuando decidí experimentar creando temas personalizados para una plataforma de blogs — ¡descubrí que hackear un tema personalizado me enseñó mucho sobre HTML y CSS!",
+    "bio2": "Avanzando hasta hoy, he tenido el privilegio de trabajar en startups, agencias y grandes corporaciones. Mi enfoque principal actualmente es construir productos accesibles e inclusivos en una gran empresa tecnológica para una variedad de clientes.",
+    "skillsTitle": "Aquí están algunas tecnologías con las que he estado trabajando recientemente:"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "scrollHint": "← Desliza para ver más proyectos →",
+    "expand": "Expandir vista de proyectos",
+    "clickToExpand": "Clic para expandir",
+    "close": "Cerrar",
+    "expandedDescription": "Una colección de proyectos en los que he trabajado, mostrando mis habilidades en desarrollo full-stack, infraestructura en la nube e integración de IA.",
+    "viewAllOnGithub": "Ver Todos los Proyectos en GitHub",
+    "project1": {
+      "title": "Cloud Dashboard",
+      "description": "Panel completo para monitoreo de infraestructura en la nube con métricas en tiempo real."
+    },
+    "project2": {
+      "title": "AI Code Assistant",
+      "description": "Herramienta inteligente de completado de código y documentación impulsada por machine learning."
+    },
+    "project3": {
+      "title": "E-Commerce Platform",
+      "description": "Solución completa de comercio electrónico con gestión de inventario y procesamiento de pagos."
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "company1": {
+      "role": "Senior Software Engineer",
+      "period": "2023 — Presente",
+      "desc1": "Lidero el desarrollo de arquitectura de microservicios sirviendo a más de 1M de usuarios activos diarios",
+      "desc2": "Mentorizo a desarrolladores junior y realizo revisiones de código"
+    },
+    "company2": {
+      "role": "Full Stack Developer",
+      "period": "2021 — 2023",
+      "desc1": "Construí y lancé características importantes para el producto SaaS principal",
+      "desc2": "Desarrollé funciones de colaboración en tiempo real usando WebSocket"
+    },
+    "company3": {
+      "role": "Frontend Developer",
+      "period": "2019 — 2021",
+      "desc1": "Desarrollé aplicaciones web responsivas para un portafolio diverso de clientes",
+      "desc2": "Creé bibliotecas de componentes reutilizables"
+    }
+  },
+  "contact": {
+    "subtitle": "¿Qué sigue?",
+    "title": "Ponte en Contacto",
+    "description": "Estoy abierto a nuevas oportunidades y siempre emocionado de conectar con otros desarrolladores.",
+    "button": "Di Hola"
+  },
+  "footer": {
+    "tagline": "Diseñado & Construido con pasión",
+    "copyright": "Todos los derechos reservados.",
+    "socialGithub": "Perfil de GitHub",
+    "socialLinkedin": "Perfil de LinkedIn",
+    "socialTwitter": "Perfil de Twitter"
+  }
+}
