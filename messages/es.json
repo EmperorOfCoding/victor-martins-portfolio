@@ -5,6 +5,7 @@
     "tagline": "Construyo cosas para la web.",
     "description": "Soy estudiante de ingeniería de software y me especializo en la creación de experiencias digitales excepcionales. Actualmente, me centro en el desarrollo de productos accesibles y centrados en el usuario que amplían los límites de lo posible en la web.",
     "cta": "Ver Mis Proyectos",
+    "downloadResume": "Descargar Currículum",
     "socialGithub": "Perfil de GitHub",
     "socialLinkedin": "Perfil de LinkedIn",
     "socialEmail": "Envíame un correo",
@@ -14,6 +15,7 @@
   },
   "about": {
     "title": "Sobre Mí",
+    "expand": "Expandir sección sobre mí",
     "bio1": "¡Hola! Mi nombre es Victor, soy estudiante de Ingeniería de Software, actualmente en mi cuarto semestre, y tengo una gran pasión por crear soluciones simples, intuitivas y efectivas para problemas complejos.",
     "bio2": "Mi viaje en la programación comenzó en 2023 en la Universidad Federal de Bahía (UFBA), donde tuve mi primer contacto con C++. Durante este período, resolví diversos problemas computacionales que me ayudaron a consolidar conceptos fundamentales de programación como lógica, estructuras de control, estructuras de datos básicas y resolución de problemas.",
     "bio3": "Después de este inicio, me uní a FIAP - Faculdade de Informática e Administração Paulista, donde, ya en el primer año, profundicé mis conocimientos en HTML, CSS, JavaScript y Python. Durante este período, participé en diversos proyectos grupales, actuando como organizador y líder, lo que contribuyó significativamente al desarrollo de habilidades técnicas y conductuales como el trabajo en equipo, la comunicación y el liderazgo técnico.",
@@ -44,6 +46,7 @@
   },
   "experience": {
     "title": "Experiencia",
+    "expand": "Expandir sección de experiencia",
     "company1": {
       "role": "Senior Software Engineer",
       "period": "2023 — Presente",
@@ -61,6 +64,23 @@
       "period": "2019 — 2021",
       "desc1": "Desarrollé aplicaciones web responsivas para un portafolio diverso de clientes",
       "desc2": "Creé bibliotecas de componentes reutilizables"
+    }
+  },
+  "education": {
+    "title": "Formación Académica",
+    "expand": "Expandir sección de formación",
+    "clickToExpand": "Clic para expandir",
+    "inProgress": "En curso",
+    "highlights": "Destacados",
+    "institution1": {
+      "name": "FIAP",
+      "degree": "Ingeniería de Software",
+      "period": "2024 — Presente"
+    },
+    "institution2": {
+      "name": "UFBA",
+      "degree": "Ciencias de la Computación",
+      "period": "2023"
     }
   },
   "contact": {

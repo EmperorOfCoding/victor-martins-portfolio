@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Maximize2 } from "lucide-react";
 import { useTranslations } from 'next-intl';
-import { useProjects } from '@/contexts/projects-context';
+import { useProjects } from '@/contexts/expandable-context';
 import { featuredProjects } from './expanded-projects-modal';
 
 export function ProjectsSection() {

@@ -1,14 +1,19 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useProjects } from "@/contexts/projects-context";
-import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { useProjects } from "@/contexts/expandable-context";
+import { Github, Linkedin, Mail, ArrowDown, FileDown } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import Image from "next/image";
 
 export function HeroSection() {
   const t = useTranslations('hero');
+  const locale = useLocale();
   const { expandProjects } = useProjects();
+
+  // Resume file based on locale
+  const resumeFile = locale === 'pt' ? '/resume/resume-pt.pdf' : '/resume/resume-en.pdf';
 
   return (
     <section className="min-h-[100dvh] flex items-center justify-center pt-16 sm:pt-20 pb-8 sm:pb-12 px-4 sm:px-6 overflow-hidden">
@@ -47,6 +52,19 @@ export function HeroSection() {
                 onClick={expandProjects}
               >
                 {t('cta')}
+              </Button>
+
+              {/* Resume Download Button */}
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-semibold transition-all"
+                asChild
+              >
+                <a href={resumeFile} download>
+                  <FileDown className="w-4 h-4 mr-2" />
+                  {t('downloadResume')}
+                </a>
               </Button>
 
               {/* Social Links */}

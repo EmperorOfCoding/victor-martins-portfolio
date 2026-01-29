@@ -3,6 +3,8 @@
 import { cn } from "@/lib/utils";
 import { useTranslations } from 'next-intl';
 import { useState } from "react";
+import { Maximize2 } from 'lucide-react';
+import { useExpandable } from '@/contexts/expandable-context';
 
 const experiences = [
   {
@@ -40,14 +42,23 @@ const experiences = [
 export function ExperienceSection() {
   const [activeTab, setActiveTab] = useState(0);
   const t = useTranslations('experience');
+  const { expandSection } = useExpandable();
 
   return (
     <div className="h-full flex flex-col">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
-        <span className="text-primary font-mono text-sm sm:text-base">02.</span>
-        {t('title')}
-        <span className="flex-1 h-px bg-border" />
-      </h2>
+      <div className="flex items-center justify-between mb-4 sm:mb-6">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
+          <span className="text-primary font-mono text-sm sm:text-base">02.</span>
+          {t('title')}
+        </h2>
+        <button
+          onClick={() => expandSection('experience')}
+          className="p-1.5 sm:p-2 rounded-md hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary"
+          aria-label={t('expand')}
+        >
+          <Maximize2 className="w-4 h-4 sm:w-5 sm:h-5" />
+        </button>
+      </div>
       <div className="flex flex-col gap-3 sm:gap-4 flex-1 min-h-0">
         <div className="flex overflow-x-auto border-b border-border -mx-4 sm:mx-0 px-4 sm:px-0">
           {experiences.map((exp, index) => (

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, X, Folder } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
-import { useProjects } from '@/contexts/projects-context';
+import { useProjects } from '@/contexts/expandable-context';
 
 export const featuredProjects = [
   {

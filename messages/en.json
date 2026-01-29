@@ -5,6 +5,7 @@
     "tagline": "I build things for the web.",
     "description": "I am a software engineering student specializing in creating exceptional digital experiences. Currently, my focus is on developing accessible, user-centered products that push the boundaries of what's possible on the web.",
     "cta": "View My Work",
+    "downloadResume": "Download Resume",
     "socialGithub": "GitHub Profile",
     "socialLinkedin": "LinkedIn Profile",
     "socialEmail": "Email Me",
@@ -14,6 +15,7 @@
   },
   "about": {
     "title": "About Me",
+    "expand": "Expand about section",
     "bio1": "Hello! My name is Victor, I'm a Software Engineering student, currently in my fourth semester, and I have a great passion for creating simple, intuitive, and effective solutions to complex problems.",
     "bio2": "My programming journey began in 2023 at the Federal University of Bahia (UFBA), where I had my first contact with C++. During this period, I solved several computational problems that helped me consolidate fundamental programming concepts such as logic, control structures, basic data structures, and problem-solving.",
     "bio3": "After this beginning, I joined FIAP - Faculdade de Informática e Administração Paulista, where, already in the first year, I deepened my knowledge in HTML, CSS, JavaScript, and Python. During this period, I participated in several group projects, acting as organizer and leader, which significantly contributed to the development of technical and behavioral skills such as teamwork, communication, and technical leadership.",
@@ -44,6 +46,7 @@
   },
   "experience": {
     "title": "Experience",
+    "expand": "Expand experience section",
     "company1": {
       "role": "Senior Software Engineer",
       "period": "2023 — Present",
@@ -61,6 +64,23 @@
       "period": "2019 — 2021",
       "desc1": "Developed responsive web applications for diverse client portfolio",
       "desc2": "Created reusable component libraries"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "expand": "Expand education section",
+    "clickToExpand": "Click to expand",
+    "inProgress": "In Progress",
+    "highlights": "Highlights",
+    "institution1": {
+      "name": "FIAP",
+      "degree": "Software Engineering",
+      "period": "2024 — Present"
+    },
+    "institution2": {
+      "name": "UFBA",
+      "degree": "Computer Science",
+      "period": "2023"
     }
   },
   "contact": {

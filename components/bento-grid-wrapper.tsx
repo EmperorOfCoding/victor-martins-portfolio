@@ -2,8 +2,8 @@
 
 import { ReactNode } from 'react';
 import { LayoutGroup } from 'framer-motion';
-import { ProjectsProvider } from '@/contexts/projects-context';
-import { ExpandedProjectsModal } from './expanded-projects-modal';
+import { ExpandableProvider } from '@/contexts/expandable-context';
+import { ExpandedModals } from './expanded-modals';
 
 interface BentoGridWrapperProps {
   children: ReactNode;
@@ -11,11 +11,11 @@ interface BentoGridWrapperProps {
 
 export function BentoGridWrapper({ children }: BentoGridWrapperProps) {
   return (
-    <ProjectsProvider>
+    <ExpandableProvider>
       <LayoutGroup>
         {children}
-        <ExpandedProjectsModal />
+        <ExpandedModals />
       </LayoutGroup>
-    </ProjectsProvider>
+    </ExpandableProvider>
   );
 }

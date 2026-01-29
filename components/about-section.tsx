@@ -1,29 +1,37 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Maximize2 } from 'lucide-react';
+import { useExpandable } from '@/contexts/expandable-context';
 
 export function AboutSection() {
   const t = useTranslations('about');
+  const { expandSection } = useExpandable();
 
   const skills = [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Next.js",
+    "React.js",
     "Node.js",
-    "Python",
-    "C++",
-    "PostgreSQL",
+    "JavaScript (ES6+)",
     "AWS",
+    "Express.js",
+    "MySQL",
   ];
 
   return (
     <div className="h-full flex flex-col">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
-        <span className="text-primary font-mono text-sm sm:text-base">01.</span>
-        {t('title')}
-        <span className="flex-1 h-px bg-border" />
-      </h2>
+      <div className="flex items-center justify-between mb-4 sm:mb-6">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
+          <span className="text-primary font-mono text-sm sm:text-base">01.</span>
+          {t('title')}
+        </h2>
+        <button
+          onClick={() => expandSection('about')}
+          className="p-1.5 sm:p-2 rounded-md hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary"
+          aria-label={t('expand')}
+        >
+          <Maximize2 className="w-4 h-4 sm:w-5 sm:h-5" />
+        </button>
+      </div>
       <div className="space-y-3 sm:space-y-4 text-muted-foreground leading-relaxed text-xs sm:text-sm">
         <p>{t('bio1')}</p>
         <p>{t('bio2')}</p>

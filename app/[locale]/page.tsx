@@ -2,7 +2,9 @@ import { AboutSection } from "@/components/about-section";
 import { BentoGridWrapper } from "@/components/bento-grid-wrapper";
 import { Comets } from "@/components/comets";
 import { ContactSection } from "@/components/contact-section";
+import { EducationSection } from "@/components/education-section";
 import { ExperienceSection } from "@/components/experience-section";
+import { FloatingPlanet } from "@/components/floating-planet";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
 import { Meteors } from "@/components/meteors";
@@ -16,6 +18,7 @@ export default async function Home() {
       <Starfield />
       <Comets />
       <Meteors />
+      <FloatingPlanet />
       <Navigation />
       <main className="min-h-screen flex flex-col">
         <HeroSection />
@@ -37,6 +40,11 @@ export default async function Home() {
             {/* Experience Card */}
             <div id="experience" className="bento-card lg:col-span-2 p-4 sm:p-6 md:p-8 scroll-mt-20 sm:scroll-mt-24">
               <ExperienceSection />
+            </div>
+
+            {/* Education Card */}
+            <div id="education" className="bento-card lg:col-span-1 p-4 sm:p-6 md:p-8 scroll-mt-20 sm:scroll-mt-24">
+              <EducationSection />
             </div>
 
             {/* Contact Card - Full Width */}
