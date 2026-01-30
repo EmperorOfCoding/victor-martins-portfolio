@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, GraduationCap, Briefcase, User, ExternalLink, Github, Download, Folder } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { useEffect } from 'react';
 import { useExpandable } from '@/contexts/expandable-context';
 import { featuredProjects } from './expanded-projects-modal';
@@ -76,7 +77,7 @@ export function ExpandedModals() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           onClick={collapseSection}
-          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground"
+          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground cursor-pointer"
         >
           <X className="w-5 h-5 sm:w-6 sm:h-6" />
         </motion.button>
@@ -140,7 +141,7 @@ export function ExpandedModals() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           onClick={collapseSection}
-          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground"
+          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground cursor-pointer"
         >
           <X className="w-5 h-5 sm:w-6 sm:h-6" />
         </motion.button>
@@ -211,7 +212,7 @@ export function ExpandedModals() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           onClick={collapseSection}
-          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground"
+          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground cursor-pointer"
         >
           <X className="w-5 h-5 sm:w-6 sm:h-6" />
         </motion.button>
@@ -280,7 +281,7 @@ export function ExpandedModals() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           onClick={collapseSection}
-          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground"
+          className="p-1.5 sm:p-2 rounded-full hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-foreground cursor-pointer"
         >
           <X className="w-5 h-5 sm:w-6 sm:h-6" />
         </motion.button>
@@ -305,9 +306,19 @@ export function ExpandedModals() {
               className="group relative bg-secondary/20 rounded-lg border border-primary/10 overflow-hidden hover:border-primary/40 transition-all"
             >
               <div className="relative h-32 sm:h-40 md:h-48 bg-gradient-to-br from-primary/20 to-accent/10 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Folder className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary/30" />
-                </div>
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Folder className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary/30" />
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 sm:p-3 rounded-full bg-primary/10 hover:bg-primary/20 text-primary">
                     <Github className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -343,7 +354,7 @@ export function ExpandedModals() {
           className="text-center mt-8 sm:mt-12"
         >
           <a
-            href="https://github.com/EmperorOfCoding"
+            href="https://github.com/EmperorOfCoding?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-primary/10 hover:bg-primary/20 text-primary rounded-lg text-sm sm:text-base font-medium transition-colors"

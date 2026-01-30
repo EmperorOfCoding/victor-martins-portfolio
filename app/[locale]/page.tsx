@@ -1,16 +1,18 @@
-import { AboutSection } from "@/components/about-section";
+import { AboutSectionVisual } from "@/components/about-section-visual";
 import { BentoGridWrapper } from "@/components/bento-grid-wrapper";
 import { Comets } from "@/components/comets";
-import { ContactSection } from "@/components/contact-section";
-import { EducationSection } from "@/components/education-section";
-import { ExperienceSection } from "@/components/experience-section";
+import { ContactSectionCompact } from "@/components/contact-section-compact";
+import { ExpandedProjectsModal } from "@/components/expanded-projects-modal";
 import { FloatingPlanet } from "@/components/floating-planet";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
+import { JourneyTimeline } from "@/components/journey-timeline";
 import { Meteors } from "@/components/meteors";
 import { Navigation } from "@/components/navigation";
-import { ProjectsSection } from "@/components/projects-section";
+import { ProjectsSectionVisual } from "@/components/projects-section-visual";
 import { Starfield } from "@/components/starfield";
+import { TechStackCard } from "@/components/tech-stack-card";
+import { BentoCard } from "@/components/ui/bento-card";
 
 export default async function Home() {
   return (
@@ -20,40 +22,52 @@ export default async function Home() {
       <Meteors />
       <FloatingPlanet />
       <Navigation />
+      
       <main className="min-h-screen flex flex-col">
+        {/* SECTION 1: Hero */}
         <HeroSection />
 
-        {/* Bento Grid Layout */}
-        <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 pb-16 sm:pb-20">
-          <div className="bento-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 auto-rows-auto">
-
-            {/* About Card - Full width on mobile, spans 2 rows on desktop */}
-            <div id="about" className="bento-card md:col-span-2 lg:col-span-1 lg:row-span-2 p-4 sm:p-6 md:p-8 overflow-y-auto max-h-[500px] sm:max-h-[600px] scroll-mt-20 sm:scroll-mt-24">
-              <AboutSection />
+        {/* SECTION 2: Visual Grid (Glass Magazine Style) */}
+        <section className="container mx-auto px-4 sm:px-6 py-16 md:py-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
+            
+            {/* Projects - Crown Jewel: Full width or 2x2 */}
+            <div id="projects" className="lg:col-span-2 lg:row-span-2">
+              <BentoCard className="h-full">
+                <ProjectsSectionVisual />
+              </BentoCard>
             </div>
 
-            {/* Projects Card - Full width on mobile, horizontal on desktop */}
-            <div id="projects" className="bento-card lg:col-span-2 p-4 sm:p-6 md:p-8 scroll-mt-20 sm:scroll-mt-24">
-              <ProjectsSection />
+            {/* About Me - Visual/Concise */}
+            <div id="about" className="lg:col-span-1 lg:row-span-2">
+              <BentoCard className="h-full">
+                <AboutSectionVisual />
+              </BentoCard>
             </div>
 
-            {/* Experience Card */}
-            <div id="experience" className="bento-card lg:col-span-2 p-4 sm:p-6 md:p-8 scroll-mt-20 sm:scroll-mt-24">
-              <ExperienceSection />
+            {/* Tech Stack - Dynamic Icons */}
+            <div id="tech" className="lg:col-span-1">
+              <BentoCard className="h-full">
+                <TechStackCard />
+              </BentoCard>
             </div>
 
-            {/* Education Card */}
-            <div id="education" className="bento-card lg:col-span-1 p-4 sm:p-6 md:p-8 scroll-mt-20 sm:scroll-mt-24">
-              <EducationSection />
-            </div>
-
-            {/* Contact Card - Full Width */}
-            <div id="contact" className="bento-card md:col-span-2 lg:col-span-3 p-4 sm:p-6 md:p-8 scroll-mt-20 sm:scroll-mt-24">
-              <ContactSection />
+            {/* Contact - Compact Widget */}
+            <div id="contact" className="lg:col-span-1">
+              <BentoCard className="h-full">
+                <ContactSectionCompact />
+              </BentoCard>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* SECTION 3: The Chronology (Timeline) */}
+        <JourneyTimeline />
+        
+        {/* Expanded Modals */}
+        <ExpandedProjectsModal />
       </main>
+
       <Footer />
     </BentoGridWrapper>
   );

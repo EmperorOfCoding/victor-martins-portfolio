@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { useProjects } from "@/contexts/expandable-context";
+import { useUISounds } from "@/components/sound-provider";
 import { Github, Linkedin, Mail, ArrowDown, FileDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
@@ -11,6 +12,7 @@ export function HeroSection() {
   const t = useTranslations('hero');
   const locale = useLocale();
   const { expandProjects } = useProjects();
+  const { playClick } = useUISounds();
 
   // Resume file based on locale
   const resumeFile = locale === 'pt' ? '/resume/resume-pt.pdf' : '/resume/resume-en.pdf';
@@ -48,7 +50,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2 sm:pt-4 animate-fade-in animation-delay-400">
               <Button
                 size="lg"
-                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-semibold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
+                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base font-semibold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all cursor-pointer"
                 onClick={expandProjects}
               >
                 {t('cta')}
@@ -172,9 +174,10 @@ export function HeroSection() {
         <div className="hidden lg:flex justify-center mt-8 xl:mt-12 animate-fade-in animation-delay-400">
           <button
             onClick={() => {
+              playClick();
               document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group cursor-pointer"
             aria-label={t('scroll')}
           >
             <span className="text-xs font-mono tracking-wider uppercase">{t('scroll')}</span>

@@ -1,3 +1,5 @@
+import { SoundProvider } from '@/components/sound-provider';
+import { ExpandableProvider } from '@/contexts/expandable-context';
 import { Analytics } from '@vercel/analytics/next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -34,7 +36,11 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geist.className} ${geistMono.className} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <SoundProvider>
+            <ExpandableProvider>
+              {children}
+            </ExpandableProvider>
+          </SoundProvider>
         </NextIntlClientProvider>
         <Analytics />
       </body>

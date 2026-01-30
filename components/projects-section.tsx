@@ -27,62 +27,67 @@ export function ProjectsSection() {
             e.stopPropagation();
             expandProjects();
           }}
-          className="p-1.5 sm:p-2 rounded-lg hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary"
+          className="p-1.5 sm:p-2 rounded-lg hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary cursor-pointer"
           aria-label={t('expand')}
         >
           <Maximize2 className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       </div>
 
-      {/* Horizontal Scroll Container */}
-      <div
-        className="flex-1 overflow-x-auto overflow-y-hidden -mx-4 sm:mx-0 px-4 sm:px-0"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex gap-3 sm:gap-4 pb-4 min-w-max">
-          {featuredProjects.map((project, index) => (
-            <div
-              key={project.title}
-              className="w-64 sm:w-72 md:w-80 flex-shrink-0 bg-secondary/30 rounded-sm border border-primary/20 p-3 sm:p-4 md:p-5 hover:border-primary/40 transition-all cursor-default"
-            >
-              <div className="flex items-start justify-between mb-2 sm:mb-3">
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground">{t(`project${index + 1}.title`)}</h3>
-                <div className="flex gap-2 sm:gap-3">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`View ${project.title} on GitHub`}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`View ${project.title} live demo`}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                  </a>
-                </div>
-              </div>
-              <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 line-clamp-2">
-                {t(`project${index + 1}.description`)}
-              </p>
-              <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                {project.technologies.map((tech) => (
-                  <span key={tech} className="text-[10px] sm:text-xs font-mono text-muted-foreground">
-                    {tech}
-                  </span>
-                ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {featuredProjects.slice(0, 2).map((project, index) => (
+          <div
+            key={project.title}
+            className="bg-secondary/30 rounded-lg border border-primary/20 p-4 hover:border-primary/40 transition-all"
+          >
+            <div className="flex items-start justify-between mb-3">
+              <h3 className="text-base font-semibold text-foreground">{t(`project${index + 1}.title`)}</h3>
+              <div className="flex gap-2">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label={`View ${project.title} on GitHub`}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <Github className="w-4 h-4" />
+                </a>
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label={`View ${project.title} live demo`}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <ExternalLink className="w-4 h-4" />
+                </a>
               </div>
             </div>
-          ))}
-        </div>
+            <p className="text-sm text-muted-foreground mb-3 line-clamp-3">
+              {t(`project${index + 1}.description`)}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech) => (
+                <span key={tech} className="text-xs font-mono text-muted-foreground">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+        {featuredProjects.length > 2 && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              expandProjects();
+            }}
+            className="col-span-full w-full p-4 text-primary hover:bg-primary/10 transition-colors rounded-lg border border-dashed border-primary/30 cursor-pointer"
+          >
+            Ver todos os projetos
+          </button>
+        )}
       </div>
       <div className="flex items-center justify-between mt-2">
         <p className="text-[10px] sm:text-xs text-muted-foreground">

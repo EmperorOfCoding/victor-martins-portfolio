@@ -9,12 +9,18 @@ export function AboutSection() {
   const { expandSection } = useExpandable();
 
   const skills = [
-    "React.js",
     "Node.js",
-    "JavaScript (ES6+)",
-    "AWS",
+    "Java",
+    "Python",
+    "JavaScript",
+    "React",
     "Express.js",
     "MySQL",
+    "Oracle SQL",
+    "AWS RDS",
+    "Docker",
+    "GitHub",
+    "Bootstrap",
   ];
 
   return (
@@ -26,7 +32,7 @@ export function AboutSection() {
         </h2>
         <button
           onClick={() => expandSection('about')}
-          className="p-1.5 sm:p-2 rounded-md hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary"
+          className="p-1.5 sm:p-2 rounded-md hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary cursor-pointer"
           aria-label={t('expand')}
         >
           <Maximize2 className="w-4 h-4 sm:w-5 sm:h-5" />

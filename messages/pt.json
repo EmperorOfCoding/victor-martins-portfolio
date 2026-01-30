@@ -2,8 +2,8 @@
   "hero": {
     "greeting": "Olá, meu nome é",
     "name": "Victor Martins",
-    "tagline": "Construo coisas para a web.",
-    "description": "Sou estudante de engenharia de software especializado na criação de experiências digitais excepcionais. Atualmente, meu foco é desenvolver produtos acessíveis e centrados no usuário, que expandam os limites do que é possível na web.",
+    "tagline": "Desenvolvedor Full Stack",
+    "description": "Estudante de Engenharia de Software com experiência em desenvolvimento web full stack, especializado em Node.js, React, Java e arquiteturas cloud. Apaixonado por criar soluções tecnológicas que impactem positivamente a vida das pessoas.",
     "cta": "Ver Meus Projetos",
     "downloadResume": "Baixar Currículo",
     "socialGithub": "Perfil do GitHub",
@@ -16,54 +16,99 @@
   "about": {
     "title": "Sobre Mim",
     "expand": "Expandir seção sobre mim",
-    "bio1": "Olá! Meu nome é Victor, sou estudante de Engenharia de Software, atualmente no quarto semestre, e tenho grande paixão por criar soluções simples, intuitivas e eficazes para problemas complexos.",
-    "bio2": "Minha jornada na programação começou em 2023, na Universidade Federal da Bahia (UFBA), onde tive meu primeiro contato com C++. Nesse período, resolvi diversos problemas computacionais que me ajudaram a consolidar conceitos fundamentais da programação, como lógica, estruturas de controle, estruturas de dados básicas e resolução de problemas.",
-    "bio3": "Após esse início, ingressei na FIAP – Faculdade de Informática e Administração Paulista, onde, já no primeiro ano, aprofundei meus conhecimentos em HTML, CSS, JavaScript e Python. Durante esse período, participei de diversos projetos em grupo, atuando como organizador e líder, o que contribuiu significativamente para o desenvolvimento de habilidades técnicas e comportamentais, como trabalho em equipe, comunicação e liderança técnica.",
-    "bio4": "Ainda no primeiro ano da faculdade, fui aprovado em um programa de treinamento da AOOP (An NTT Data Company). Desde então, fui promovido duas vezes no mesmo ano, atuando atualmente como Consultor Técnico Júnior III, posição na qual continuo desenvolvendo minhas habilidades profissionais e técnicas no dia a dia corporativo.",
-    "bio5": "Meu comprometimento profissional está diretamente ligado aos meus princípios morais e à minha fé em Deus. Acredito que meu propósito é utilizar a tecnologia como ferramenta para impactar positivamente a vida de milhares de pessoas, criando aplicações que gerem valor real e contribuam para o desenvolvimento da sociedade.",
+    "clickToExpand": "Clique para ler mais",
+    "bio1": "Olá! Meu nome é Victor, sou estudante de Engenharia de Software na FIAP, com experiência prática em desenvolvimento Full Stack e uma base sólida em C++ adquirida na UFBA.",
+    "bio2": "Atuo no desenvolvimento de APIs, bancos de dados e aplicações web, com foco em criar soluções que gerem impacto real e acelerem minha evolução técnica e profissional.",
+    "bio3": "Possuo certificações como CSA – Certified System Administrator e CIS – Customer Service Management. Minhas hard skills incluem tecnologias como Node.js, Java, Python, JavaScript, HTML, CSS, além de frameworks como Express.js, React e Bootstrap.",
+    "bio4": "Tenho experiência com bancos de dados como MySQL, Oracle SQL Developer e AWS RDS, além de ferramentas e práticas de DevOps como GitHub, Docker, Postman e Azure DevOps.",
+    "bio5": "Atualmente trabalho como Consultor Técnico na AOOP (NTT DATA Company), onde já atuei na automação de processos para a Azul Linhas Aéreas, implementando fluxos complexos e integrações, sempre reconhecido pela qualidade na entrega.",
     "skillsTitle": "Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:"
   },
   "projects": {
     "title": "Projetos em Destaque",
+    "selectedWork": "Trabalhos Selecionados",
+    "featuredProjectsHint": "Projetos em destaque demonstrando minha expertise",
+    "clickForDetails": "Clique para detalhes",
+    "viewAllProjects": "Ver Todos os Projetos",
     "scrollHint": "← Deslize para ver mais projetos →",
     "expand": "Expandir visualização de projetos",
     "clickToExpand": "Clique para expandir",
+    "back": "Voltar",
     "close": "Fechar",
     "expandedDescription": "Uma coleção de projetos nos quais trabalhei, demonstrando minhas habilidades em desenvolvimento full-stack, infraestrutura em nuvem e integração de IA.",
     "viewAllOnGithub": "Ver Todos os Projetos no GitHub",
+    "tabInfo": "Informações",
+    "tabVideo": "Vídeo",
+    "aboutProject": "Sobre o Projeto",
+    "features": "Funcionalidades",
+    "challenges": "Desafios & Soluções",
+    "technologies": "Tecnologias Utilizadas",
+    "videoPresentation": "Apresentação em Vídeo",
+    "videoDescription": "Assista a uma demonstração completa do projeto em ação.",
+    "videoNotSupported": "Seu navegador não suporta a reprodução de vídeo.",
     "project1": {
-      "title": "Cloud Dashboard",
-      "description": "Dashboard abrangente para monitoramento de infraestrutura em nuvem com métricas em tempo real."
+      "title": "Clínica Dr. Wallace Victor",
+      "description": "Sistema de agendamento médico online desenvolvido com React, Node.js, Express e AWS RDS. Full Stack.",
+      "detailedDescription": "Sistema completo de agendamento médico desenvolvido para a Clínica Dr. Wallace Victor. A aplicação permite que pacientes realizem agendamentos online de forma intuitiva, visualizem horários disponíveis e recebam confirmações automáticas. O sistema inclui painel administrativo completo para gestão de consultas, pacientes e prontuários.",
+      "features": [
+        "Agendamento online - Agende consultas de forma fácil e rápida",
+        "Minha Agenda - Visualize, cancele e reagende suas consultas",
+        "Histórico de consultas - Acesse consultas passadas e futuras",
+        "Avaliação pós-consulta - Avalie o atendimento com estrelas e comentários",
+        "Upload de documentos - Envie exames e documentos antes da consulta",
+        "Perfil completo - Gerencie dados pessoais, alergias e contato de emergência",
+        "Lembretes automáticos - Receba lembretes por e-mail 24h e 1h antes",
+        "Exportar para calendário - Sincronize com Google Calendar ou baixe arquivo .ics",
+        "Modo escuro - Alterne entre tema claro e escuro",
+        "PWA - Instale como app no celular",
+        "Dashboard de métricas - Gráficos de consultas, taxa de cancelamento, avaliações",
+        "Calendário visual - Visualize toda a agenda em formato de calendário",
+        "Gestão de pacientes - Busca, listagem e gerenciamento de pacientes",
+        "Gestão de agenda - Bloqueie horários e gerencie disponibilidade",
+        "Avaliações recebidas - Veja feedback dos pacientes"
+      ],
+      "challenges": "O principal desafio foi implementar um sistema de agendamento em tempo real que evitasse conflitos de horários entre múltiplos usuários simultâneos. A solução envolveu o uso de transações SQL e locks otimistas no banco de dados AWS RDS.",
+      "year": "2024",
+      "role": "Desenvolvedor Full Stack"
     },
     "project2": {
-      "title": "AI Code Assistant",
-      "description": "Ferramenta inteligente de conclusão de código e documentação alimentada por machine learning."
+      "title": "FocusWave",
+      "description": "API REST desenvolvida em Java utilizando Jersey, JAX-RS e JDBC Oracle, seguindo arquitetura em camadas.",
+      "detailedDescription": "API REST robusta desenvolvida em Java para gerenciamento de dados empresariais. A API segue princípios de arquitetura em camadas (Controller, Service, DAO) oferecendo separação clara de responsabilidades.",
+      "features": [
+        "Arquitetura em camadas (MVC)",
+        "Conexão pool com Oracle Database",
+        "Validação de dados e tratamento de exceções"
+      ],
+      "challenges": "A integração com o banco de dados Oracle exigiu configuração cuidadosa de connection pools e otimização de queries para garantir performance com grandes volumes de dados.",
+      "year": "2024",
+      "role": "Desenvolvedor Backend"
     },
     "project3": {
-      "title": "E-Commerce Platform",
-      "description": "Solução completa de e-commerce com gerenciamento de inventário e processamento de pagamentos."
+      "title": "AgroMax",
+      "description": "Projeto Front-End e UI Design com foco em sustentabilidade, alinhado às ODS da ONU, com JavaScript interativo."
     }
   },
   "experience": {
     "title": "Experiência",
     "expand": "Expandir seção de experiência",
     "company1": {
-      "role": "Senior Software Engineer",
-      "period": "2023 — Presente",
-      "desc1": "Lidero desenvolvimento de arquitetura de microserviços servindo 1M+ usuários ativos diários",
-      "desc2": "Mentoro desenvolvedores júnior e conduzo revisões de código"
+      "role": "Consultor Técnico Junior",
+      "period": "07/2025 – Atual",
+      "desc1": "Automação de pedidos de EPI e implementação de fluxo NRS com integração OneTrust para Azul Linhas Aéreas.",
+      "desc2": "Criação de base de Squads e área de faturamento, com reconhecimento direto do cliente."
     },
     "company2": {
-      "role": "Full Stack Developer",
-      "period": "2021 — 2023",
-      "desc1": "Construí e lancei recursos importantes para o produto SaaS principal",
-      "desc2": "Desenvolvi recursos de colaboração em tempo real usando WebSocket"
+      "role": "Consultor Técnico Trainee",
+      "period": "09/2024 – 06/2025",
+      "desc1": "Desenvolvimento com JavaScript e Flow Designer, integrações REST utilizando Postman.",
+      "desc2": "Atuação direta com o cliente e uso de Azure DevOps para gestão de tarefas."
     },
     "company3": {
-      "role": "Frontend Developer",
-      "period": "2019 — 2021",
-      "desc1": "Desenvolvi aplicações web responsivas para portfólio diverso de clientes",
-      "desc2": "Criei bibliotecas de componentes reutilizáveis"
+      "role": "Acadêmico / Freelancer",
+      "period": "2023 — 2024",
+      "desc1": "Desenvolvimento de projetos acadêmicos e pessoais para consolidar conhecimentos em Full Stack.",
+      "desc2": "Foco em aprendizado contínuo e aplicação prática de conceitos de engenharia de software."
     }
   },
   "education": {
@@ -75,12 +120,14 @@
     "institution1": {
       "name": "FIAP",
       "degree": "Engenharia de Software",
-      "period": "2024 — Presente"
+      "period": "2024 – 2027 (Previsão)",
+      "description": "4º semestre em andamento. Foco em práticas modernas de desenvolvimento, arquitetura e inovação."
     },
     "institution2": {
       "name": "UFBA",
-      "degree": "Ciência da Computação",
-      "period": "2023"
+      "degree": "Iniciação em Programação (C++)",
+      "period": "2023",
+      "description": "Base sólida em programação C++, algoritmos e lógica de programação."
     }
   },
   "contact": {
@@ -88,6 +135,15 @@
     "title": "Entre em Contato",
     "description": "Estou aberto a novas oportunidades e sempre animado para conectar com outros desenvolvedores.",
     "button": "Diga Olá"
+  },
+  "journey": {
+    "title": "Jornada",
+    "subtitle": "Uma visão cronológica da minha experiência profissional e formação acadêmica"
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "subtitle": "Ferramentas que utilizo",
+    "footer": "E muito mais..."
   },
   "footer": {
     "tagline": "Projetado & Construído com paixão",

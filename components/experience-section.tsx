@@ -53,7 +53,7 @@ export function ExperienceSection() {
         </h2>
         <button
           onClick={() => expandSection('experience')}
-          className="p-1.5 sm:p-2 rounded-md hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary"
+          className="p-1.5 sm:p-2 rounded-md hover:bg-secondary/50 transition-colors text-muted-foreground hover:text-primary cursor-pointer"
           aria-label={t('expand')}
         >
           <Maximize2 className="w-4 h-4 sm:w-5 sm:h-5" />

@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import { LayoutGroup } from 'framer-motion';
 import { ExpandableProvider } from '@/contexts/expandable-context';
 import { ExpandedModals } from './expanded-modals';
+import { SoundProvider } from './sound-provider';
 
 interface BentoGridWrapperProps {
   children: ReactNode;
@@ -11,11 +12,13 @@ interface BentoGridWrapperProps {
 
 export function BentoGridWrapper({ children }: BentoGridWrapperProps) {
   return (
-    <ExpandableProvider>
-      <LayoutGroup>
-        {children}
-        <ExpandedModals />
-      </LayoutGroup>
-    </ExpandableProvider>
+    <SoundProvider>
+      <ExpandableProvider>
+        <LayoutGroup>
+          {children}
+          <ExpandedModals />
+        </LayoutGroup>
+      </ExpandableProvider>
+    </SoundProvider>
   );
 }
