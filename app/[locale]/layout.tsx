@@ -1,3 +1,4 @@
+import { PageTransition } from '@/components/page-transition';
 import { SoundProvider } from '@/components/sound-provider';
 import { ExpandableProvider } from '@/contexts/expandable-context';
 import { Analytics } from '@vercel/analytics/next';
@@ -38,7 +39,9 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <SoundProvider>
             <ExpandableProvider>
-              {children}
+              <PageTransition>
+                {children}
+              </PageTransition>
             </ExpandableProvider>
           </SoundProvider>
         </NextIntlClientProvider>

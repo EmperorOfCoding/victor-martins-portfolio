@@ -2,7 +2,7 @@
 
 import { useProjects } from '@/contexts/expandable-context';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Calendar, CheckCircle2, ChevronLeft, Code2, ExternalLink, Folder, Github, Info, Lightbulb, Play, FileText, X } from 'lucide-react';
+import { Calendar, CheckCircle2, ChevronLeft, Code2, ExternalLink, FileText, Folder, Github, Info, Lightbulb, Play, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -63,6 +63,31 @@ export const featuredProjects = [
     year: "2024",
     role: "Desenvolvedor Backend"
   },
+  {
+    title: "Victor Martins Portfolio",
+    description:
+      "Portfólio pessoal desenvolvido com Next.js 15, React 19, TypeScript e Tailwind CSS v4. Design moderno com i18n e animações.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "next-intl"],
+    github: "https://github.com/EmperorOfCoding/victor-martins-portfolio",
+    live: "https://victormartins.dev/",
+    image: "/images/projects/victor-martins-portfolio.png",
+    video: "",
+    highlights: ["Design Híbrido", "Internacionalização (i18n)", "Animações Suaves"],
+    detailedDescription: "Portfólio pessoal desenvolvido para demonstrar habilidades como Engenheiro de Software Full Stack, com foco em experiência do usuário (UX), design moderno e performance. O projeto combina Bento Grid para projetos e Timeline vertical para jornada/educação, com suporte completo para 3 idiomas.",
+    features: [
+      "Design Híbrido & Moderno - Layout Bento Grid + Timeline vertical",
+      "Internacionalização (i18n) - Suporte para PT, EN e ES",
+      "Modais Expandidos - Visualização detalhada de projetos com vídeos e abas",
+      "Feedback Sonoro (UI Sounds) - Efeitos sonoros em interações",
+      "Animações Suaves - Transições fluidas com framer-motion",
+      "Download Inteligente de Currículo - Automático por idioma",
+      "Totalmente Responsivo - Mobile, Tablet e Desktop",
+      "Dark Mode Nativo - Glassmorphism e cores vibrantes"
+    ],
+    challenges: "O principal desafio foi criar uma experiência de usuário única e memorável, equilibrando design moderno com performance. A implementação de i18n com next-intl exigiu estruturação cuidadosa das traduções e roteamento dinâmico.",
+    year: "2025",
+    role: "Desenvolvedor Full Stack"
+  },
 ];
 
 // Helper to detect YouTube URLs and extract video ID
@@ -82,6 +107,11 @@ export function ExpandedProjectsModal() {
   const [activeTab, setActiveTab] = useState<DetailTab>('info');
   const t = useTranslations('projects');
   const { playClick, playHover } = useUISounds();
+
+  // Calculate the current project index for translations
+  const currentProjectIndex = selectedProject 
+    ? featuredProjects.findIndex(p => p.title === selectedProject.title)
+    : selectedProjectIndex ?? 0;
 
   // Handle pre-selected project from context
   useEffect(() => {
@@ -390,10 +420,10 @@ export function ExpandedProjectsModal() {
                       <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
                         <span className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
-                          {t(`project${(selectedProjectIndex ?? 0) + 1}.year`)}
+                          {t(`project${currentProjectIndex + 1}.year`)}
                         </span>
                         <span className="w-1 h-1 rounded-full bg-muted-foreground" />
-                        <span>{t(`project${(selectedProjectIndex ?? 0) + 1}.role`)}</span>
+                        <span>{t(`project${currentProjectIndex + 1}.role`)}</span>
                       </div>
                     </motion.div>
 
@@ -453,7 +483,7 @@ export function ExpandedProjectsModal() {
                               {t('aboutProject')}
                             </h3>
                             <p className="text-muted-foreground leading-relaxed">
-                              {t(`project${(selectedProjectIndex ?? 0) + 1}.detailedDescription`)}
+                              {t(`project${currentProjectIndex + 1}.detailedDescription`)}
                             </p>
                           </div>
 
@@ -464,7 +494,7 @@ export function ExpandedProjectsModal() {
                               {t('features')}
                             </h3>
                             <ul className="space-y-2">
-                              {(t.raw(`project${(selectedProjectIndex ?? 0) + 1}.features`) as string[]).map((feature, idx) => (
+                              {(t.raw(`project${currentProjectIndex + 1}.features`) as string[]).map((feature, idx) => (
                                 <li key={idx} className="flex items-start gap-2 text-muted-foreground">
                                   <span className="text-primary mt-1">▹</span>
                                   <span>{feature}</span>
@@ -480,7 +510,7 @@ export function ExpandedProjectsModal() {
                               {t('challenges')}
                             </h3>
                             <p className="text-muted-foreground leading-relaxed">
-                              {t(`project${(selectedProjectIndex ?? 0) + 1}.challenges`)}
+                              {t(`project${currentProjectIndex + 1}.challenges`)}
                             </p>
                           </div>
 

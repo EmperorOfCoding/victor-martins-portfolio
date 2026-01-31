@@ -15,7 +15,7 @@ interface UISoundContextType {
 const UISoundContext = createContext<UISoundContextType | undefined>(undefined);
 
 export function SoundProvider({ children }: { children: React.ReactNode }) {
-  const [isMuted, setIsMuted] = useState(true); // Start muted by default
+  const [isMuted, setIsMuted] = useState(false); // Start with sound enabled by default
   const audioContextRef = useRef<AudioContext | null>(null);
 
   // Initialize AudioContext on first user interaction

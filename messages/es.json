@@ -85,8 +85,22 @@
       "role": "Desarrollador Backend"
     },
     "project3": {
-      "title": "AgroMax",
-      "description": "Proyecto Front-End y UI Design enfocado en sostenibilidad, alineado con los ODS de la ONU, con JavaScript interactivo."
+      "title": "Victor Martins Portfolio",
+      "description": "Portafolio personal desarrollado para demostrar habilidades como Ingeniero de Software Full Stack, con enfoque en UX, diseño moderno y rendimiento.",
+      "detailedDescription": "Portafolio personal desarrollado para demostrar mis habilidades como Ingeniero de Software Full Stack, con enfoque en experiencia de usuario (UX), diseño moderno y rendimiento.",
+      "features": [
+        "Diseño Híbrido y Moderno - Layout que combina Bento Grid para proyectos y Timeline vertical para trayectoria/educación",
+        "Internacionalización (i18n) - Soporte completo para Portugués (PT), Inglés (EN) y Español (ES)",
+        "Modales Expandidos - Visualización detallada de proyectos sin salir de la página, con soporte para videos, pestañas de información y galerías",
+        "Feedback Sonoro (UI Sounds) - Efectos de sonido sutiles en interacciones (clic, hover) para una experiencia más táctil",
+        "Animaciones Suaves - Transiciones fluidas utilizando framer-motion y micro-interacciones",
+        "Descarga Inteligente de Currículum - Entrega automática del currículum en Inglés o Portugués dependiendo del idioma seleccionado",
+        "Totalmente Responsivo - Adaptado perfectamente para Mobile, Tablet y Desktop",
+        "Dark Mode Nativo - Interfaz diseñada con glassmorphism y colores vibrantes en fondo oscuro"
+      ],
+      "challenges": "El principal desafío fue crear una experiencia de usuario única y memorable, equilibrando diseño moderno con rendimiento. La implementación de i18n con next-intl requirió estructuración cuidadosa de las traducciones y enrutamiento dinámico.",
+      "year": "2025",
+      "role": "Desarrollador Full Stack"
     }
   },
   "experience": {
