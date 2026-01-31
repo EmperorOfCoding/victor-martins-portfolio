@@ -139,10 +139,10 @@ export function HeroSection() {
                   <div className="absolute inset-0 rounded-xl sm:rounded-2xl md:rounded-3xl border border-white/10 z-20 pointer-events-none" />
 
                   <Image
-                    src="/images/victor-profile.png"
+                    src="/images/profile-hero.jpg"
                     alt="Victor Martins - Software Engineer"
                     fill
-                    className="object-cover object-[50%_20%]"
+                    className="object-cover object-[50%_15%]"
                     priority
                     sizes="(max-width: 640px) 280px, (max-width: 768px) 384px, (max-width: 1024px) 448px, 512px"
                   />
