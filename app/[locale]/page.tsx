@@ -10,6 +10,7 @@ import { JourneyTimeline } from "@/components/journey-timeline";
 import { Meteors } from "@/components/meteors";
 import { Navigation } from "@/components/navigation";
 import { ProjectsSectionVisual } from "@/components/projects-section-visual";
+import { ScrollProgressBar } from "@/components/scroll-progress-bar";
 import { Starfield } from "@/components/starfield";
 import { TechStackCard } from "@/components/tech-stack-card";
 import { BentoCard } from "@/components/ui/bento-card";
@@ -21,6 +22,7 @@ export default async function Home() {
       <Comets />
       <Meteors />
       <FloatingPlanet />
+      <ScrollProgressBar />
       <Navigation />
       
       <main className="min-h-screen flex flex-col">

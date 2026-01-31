@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Calendar, CheckCircle2, ChevronLeft, Code2, ExternalLink, FileText, Folder, Github, Info, Lightbulb, Play, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useUISounds } from './sound-provider';
 
 type DetailTab = 'info' | 'video';
@@ -107,6 +107,7 @@ export function ExpandedProjectsModal() {
   const [activeTab, setActiveTab] = useState<DetailTab>('info');
   const t = useTranslations('projects');
   const { playClick, playHover } = useUISounds();
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   // Calculate the current project index for translations
   const currentProjectIndex = selectedProject 
