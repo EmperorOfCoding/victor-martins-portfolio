@@ -1,11 +1,10 @@
 "use client";
 
+import { useUISounds } from "@/components/sound-provider";
 import { Button } from "@/components/ui/button";
 import { useProjects } from "@/contexts/expandable-context";
-import { useUISounds } from "@/components/sound-provider";
-import { Github, Linkedin, Mail, ArrowDown, FileDown } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
+import { ArrowDown, FileDown, Github, Linkedin, Mail } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
 export function HeroSection() {
@@ -15,7 +14,9 @@ export function HeroSection() {
   const { playClick } = useUISounds();
 
   // Resume file based on locale
-  const resumeFile = locale === 'pt' ? '/resume/resume-pt.pdf' : '/resume/resume-en.pdf';
+  const resumeFile = locale === 'en' 
+    ? '/documents/Curriculo_Victor_Martins_EN.docx'
+    : '/documents/Curriculo_Victor_Martins_v4.docx';
 
   return (
     <section className="min-h-[100dvh] flex items-center justify-center pt-16 sm:pt-20 pb-8 sm:pb-12 px-4 sm:px-6 overflow-hidden">
