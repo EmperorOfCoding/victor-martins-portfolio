@@ -103,7 +103,7 @@ export function HeroSection() {
 
           {/* Image Content - Right Column */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in animation-delay-200">
-            <div className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg">
+            <div className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-[420px] xl:max-w-lg">
 
               {/* Background Decorative Elements - Hidden on very small screens */}
               {/* Blob 1 - Primary color */}
@@ -131,7 +131,7 @@ export function HeroSection() {
 
               {/* Main Image Container */}
               <div className="relative z-10 animate-float-slow">
-                <div className="relative aspect-[3/4] w-full max-h-[45vh] sm:max-h-[50vh] lg:max-h-[65vh] rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden border-2 border-primary/20 shadow-2xl shadow-primary/20">
+                <div className="relative aspect-[3/4] w-full max-h-[45vh] sm:max-h-[50vh] md:max-h-[55vh] lg:max-h-[60vh] xl:max-h-[65vh] rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden border-2 border-primary/20 shadow-2xl shadow-primary/20">
                   {/* Gradient Overlay on Image */}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent z-10 pointer-events-none" />
 

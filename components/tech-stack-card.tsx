@@ -24,7 +24,7 @@ export function TechStackCard() {
   return (
     <div className="h-full flex flex-col">
       <div className="mb-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground mb-2">
           {t('title')}
         </h2>
         <p className="text-sm text-muted-foreground">
@@ -33,7 +33,7 @@ export function TechStackCard() {
       </div>
 
       {/* Tech Icons Grid */}
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 flex-1">
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 sm:gap-3 lg:gap-4 flex-1">
         {technologies.map((tech, index) => (
           <motion.div
             key={tech.name}
@@ -46,14 +46,14 @@ export function TechStackCard() {
               rotate: [0, -5, 5, 0],
               transition: { duration: 0.3 }
             }}
-            className="group relative aspect-square flex flex-col items-center justify-center rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-primary/30 transition-all duration-300 cursor-pointer"
+            className="group relative aspect-square flex flex-col items-center justify-center rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-primary/30 transition-all duration-300"
           >
             {/* Glow effect */}
             <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-primary/20 to-accent/20 blur-xl" />
             
             <div className="relative z-10 flex flex-col items-center gap-2">
               <span className="text-2xl md:text-3xl">{tech.icon}</span>
-              <span className="text-[10px] md:text-xs font-mono text-muted-foreground group-hover:text-primary transition-colors">
+              <span className="text-[8px] sm:text-[9px] md:text-[10px] font-mono text-muted-foreground group-hover:text-primary transition-colors truncate max-w-full px-1">
                 {tech.name}
               </span>
             </div>

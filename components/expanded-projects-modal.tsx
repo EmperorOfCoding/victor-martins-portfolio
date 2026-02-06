@@ -173,7 +173,6 @@ export function ExpandedProjectsModal() {
                 transition={{ delay: 0.2 }}
                 className="text-lg sm:text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2 sm:gap-3"
               >
-                <span className="text-primary font-mono text-sm sm:text-lg">03.</span>
                 {t('title')}
               </motion.h2>
               <motion.button

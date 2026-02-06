@@ -1,9 +1,9 @@
 'use client';
 
+import { useProjects } from '@/contexts/expandable-context';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Maximize2 } from "lucide-react";
 import { useTranslations } from 'next-intl';
-import { useProjects } from '@/contexts/expandable-context';
 import { featuredProjects } from './expanded-projects-modal';
 
 export function ProjectsSection() {
@@ -18,7 +18,6 @@ export function ProjectsSection() {
     >
       <div className="flex items-center justify-between mb-4 sm:mb-6">
         <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground flex items-center gap-2 sm:gap-3">
-          <span className="text-primary font-mono text-sm sm:text-base">03.</span>
           {t('title')}
           <span className="flex-1 h-px bg-border" />
         </h2>
