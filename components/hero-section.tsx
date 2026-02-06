@@ -15,8 +15,8 @@ export function HeroSection() {
 
   // Resume file based on locale
   const resumeFile = locale === 'en' 
-    ? '/documents/Curriculo_Victor_Martins_EN.docx'
-    : '/documents/Curriculo_Victor_Martins_v4.docx';
+    ? '/documents/Curriculo_Victor_Martins_EN.pdf'
+    : '/documents/Curriculo_Victor_Martins_v4_pt_br.pdf';
 
   return (
     <section className="min-h-[100dvh] flex items-center justify-center pt-16 sm:pt-20 pb-8 sm:pb-12 px-4 sm:px-6 overflow-hidden">
