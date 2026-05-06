@@ -62,7 +62,11 @@
         "Dark Mode Nativo - Interface desenhada com glassmorphism e cores vibrantes em fundo escuro"
       ],
       "challenges": "O principal desafio foi criar uma experiência de usuário única e memorável, equilibrando design moderno com performance. A implementação de i18n com next-intl exigiu estruturação cuidadosa das traduções e roteamento dinâmico.",
-      "highlights": ["Design Híbrido", "Internacionalização (i18n)", "Animações Suaves"],
+      "highlights": [
+        "Design Híbrido",
+        "Internacionalização (i18n)",
+        "Animações Suaves"
+      ],
       "year": "2025",
       "role": "Desenvolvedor Full Stack"
     },
@@ -79,7 +83,11 @@
         "SEO Estratégico - Implementación de metadados e estrutura semântica para visibilidade orgânica"
       ],
       "challenges": "O principal desafio foi equilibrar o uso de imagens de alta resolução com uma performance de carregamento excepcional. A solução envolveu técnicas avançadas de lazy loading e otimização de assets nativas do Next.js, garantindo que o luxo da casa fosse transmitido sem comprometer a velocidade.",
-      "highlights": ["Experiência Imersiva", "Design Responsivo", "Otimização de Performance"],
+      "highlights": [
+        "Experiência Imersiva",
+        "Design Responsivo",
+        "Otimização de Performance"
+      ],
       "year": "2024",
       "role": "Desenvolvedor Full Stack"
     }
@@ -117,12 +125,6 @@
       "degree": "Engenharia de Software",
       "period": "2024 – 2027 (Previsão)",
       "description": "4º semestre em andamento. Foco em práticas modernas de desenvolvimento, arquitetura e inovação."
-    },
-    "institution2": {
-      "name": "UFBA",
-      "degree": "Engenharia de Computação",
-      "period": "2022 – 2024",
-      "description": "Base sólida em algoritmos, estrutura de dados e programação C++."
     }
   },
   "journey": {
