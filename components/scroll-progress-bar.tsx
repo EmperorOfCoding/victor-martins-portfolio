@@ -14,7 +14,7 @@ export function ScrollProgressBar() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-primary/30 origin-left z-50"
+      className="fixed top-0 left-0 right-0 h-1 bg-primary/30 origin-left z-[60]"
       style={{ scaleX }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-80" />

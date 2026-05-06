@@ -75,6 +75,9 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 Este projeto é de uso pessoal para portfólio. Sinta-se à vontade para se inspirar, mas por favor, dê os devidos créditos se utilizar partes do código.
 
+## 📝 Changelog
+*   **06/05/2026**: Correção na barra de progresso de scroll. A barra estava sendo sobreposta pela barra de navegação devido à um conflito de `z-index`. O `z-index` da `ScrollProgressBar` foi atualizado para `z-[60]` para garantir que ela sempre apareça por cima da navegação.
+
 ---
 
 Desenvolvido com 💜 por [Victor Martins](https://www.linkedin.com/in/victor-martins-9095092b5/)
