@@ -43,7 +43,7 @@ export function ProjectsSectionVisual() {
 
       {/* Featured Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1">
-        {featuredProjects.slice(0, 2).map((project, index) => (
+        {featuredProjects.slice(0, 4).map((project, index) => (
           <motion.div
             key={project.title}
             initial={{ opacity: 0, y: 20 }}

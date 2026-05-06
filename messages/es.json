@@ -21,7 +21,7 @@
     "bio2": "Actúo en el desarrollo de APIs, bases de datos y aplicaciones web, con enfoque en crear soluciones que generen impacto real y aceleren mi evolución técnica y profesional.",
     "bio3": "Poseo certificaciones como CSA – Certified System Administrator y CIS – Customer Service Management. Mis hard skills incluyen tecnologías como Node.js, Java, Python, JavaScript, HTML, CSS, además de frameworks como Express.js, React y Bootstrap.",
     "bio4": "Tengo experiencia con bases de datos como MySQL, Oracle SQL Developer y AWS RDS, además de herramientas y prácticas de DevOps como GitHub, Docker, Postman y Azure DevOps.",
-    "bio5": "Actualmente trabajo como Consultor Técnico en AOOP (NTT DATA Company), donde ya he actuado en la automatización de procesos para Azul Linhas Aéreas, implementando flujos complejos e integraciones, siempre reconocido por la calidad en la entrega.",
+    "bio5": "Actualmente trabajo como Consultor Técnico en AOOP (NTT DATA Company), donde ya he actuado en la automatización de procesos para Azul Linhas Aéreas, implementando fluxos complejos e integraciones, siempre reconocido por la calidad en la entrega.",
     "skillsTitle": "Aquí están algunas tecnologías con las que he estado trabajando recientemente:"
   },
   "projects": {
@@ -41,50 +41,13 @@
     "tabVideo": "Vídeo",
     "aboutProject": "Sobre el Proyecto",
     "features": "Funcionalidades",
-    "challenges": "Desafíos & Soluciones",
+    "challenges": "Desafíos y Soluciones",
     "technologies": "Tecnologías Utilizadas",
     "videoPresentation": "Presentación en Vídeo",
     "videoDescription": "Mira una demostración completa del proyecto en acción.",
     "videoNotSupported": "Tu navegador no admite la reproducción de vídeo.",
+    "viewOnline": "Ver en línea",
     "project1": {
-      "title": "Clínica Dr. Wallace Victor",
-      "description": "Sistema de citas médicas online desarrollado con React, Node.js, Express y AWS RDS. Full Stack.",
-      "detailedDescription": "Sistema completo de citas médicas desarrollado para la Clínica Dr. Wallace Victor. La aplicación permite que los pacientes programen citas en línea de forma intuitiva, visualicen horarios disponibles y reciban confirmaciones automáticas. El sistema incluye panel administrativo completo para gestión de citas, pacientes y historiales médicos.",
-      "features": [
-        "Programación en línea - Programe citas de forma fácil y rápida",
-        "Mi Agenda - Visualice, cancele y reprograme sus citas",
-        "Historial de citas - Acceda a citas pasadas y futuras",
-        "Evaluación post-consulta - Evalúe el servicio con estrellas y comentarios",
-        "Carga de documentos - Envíe exámenes y documentos antes de la consulta",
-        "Perfil completo - Gestione datos personales, alergias y contacto de emergencia",
-        "Recordatorios automáticos - Reciba recordatorios por correo 24h y 1h antes",
-        "Exportar a calendario - Sincronice con Google Calendar o descargue archivo .ics",
-        "Modo oscuro - Alterne entre tema claro y oscuro",
-        "PWA - Instale como app en su celular",
-        "Panel de métricas - Gráficos de citas, tasa de cancelación, evaluaciones",
-        "Calendario visual - Visualice toda la agenda en formato de calendario",
-        "Gestión de pacientes - Búsqueda, listado y gestión de pacientes",
-        "Gestión de agenda - Bloquee horarios y gestione disponibilidad",
-        "Evaluaciones recibidas - Vea los comentarios de los pacientes"
-      ],
-      "challenges": "El principal desafío fue implementar un sistema de programación en tiempo real que evitara conflictos de horarios entre múltiples usuarios simultáneos. La solución involucró el uso de transacciones SQL y locks optimistas en la base de datos AWS RDS.",
-      "year": "2024",
-      "role": "Desarrollador Full Stack"
-    },
-    "project2": {
-      "title": "FocusWave",
-      "description": "API REST desarrollada en Java utilizando Jersey, JAX-RS y JDBC Oracle, siguiendo arquitectura en capas.",
-      "detailedDescription": "API REST robusta desarrollada en Java para gestión de datos empresariales. La API sigue principios de arquitectura en capas (Controller, Service, DAO) ofreciendo separación clara de responsabilidades.",
-      "features": [
-        "Arquitectura en capas (MVC)",
-        "Connection pool con Oracle Database",
-        "Validación de datos y manejo de excepciones"
-      ],
-      "challenges": "La integración con la base de datos Oracle requirió configuración cuidadosa de connection pools y optimización de queries para garantizar performance con grandes volúmenes de datos.",
-      "year": "2024",
-      "role": "Desarrollador Backend"
-    },
-    "project3": {
       "title": "Victor Martins Portfolio",
       "description": "Portafolio personal desarrollado para demostrar habilidades como Ingeniero de Software Full Stack, con enfoque en UX, diseño moderno y rendimiento.",
       "detailedDescription": "Portafolio personal desarrollado para demostrar mis habilidades como Ingeniero de Software Full Stack, con enfoque en experiencia de usuario (UX), diseño moderno y rendimiento.",
@@ -98,8 +61,34 @@
         "Totalmente Responsivo - Adaptado perfectamente para Mobile, Tablet y Desktop",
         "Dark Mode Nativo - Interfaz diseñada con glassmorphism y colores vibrantes en fondo oscuro"
       ],
-      "challenges": "El principal desafío fue crear una experiencia de usuario única y memorable, equilibrando diseño moderno con rendimiento. La implementación de i18n con next-intl requirió estructuración cuidadosa de las traducciones y enrutamiento dinámico.",
+      "challenges": "El principal desafío fue crear una experiencia de usuario única y memorable, equilibrando diseño moderno con rendimiento. La implementación de i18n con next-intl requirió estructuración cuidadosa de las traduções y enrutamiento dinámico.",
+      "highlights": [
+        "Diseño Híbrido",
+        "Internacionalización (i18n)",
+        "Animaciones Suaves"
+      ],
       "year": "2025",
+      "role": "Desarrollador Full Stack"
+    },
+    "project2": {
+      "title": "Quintas de Sauípe D10",
+      "description": "Plataforma de alquiler para una casa de lujo en Quintas de Sauípe, desarrollada con Next.js, Tailwind CSS y Framer Motion.",
+      "detailedDescription": "Landing page premium desarrollada para promover el alquiler de una casa de alto estándar en el condominio Quintas de Sauípe. El proyecto se centra en una rica experiencia visual, utilizando animaciones suaves y un diseño moderno para atraer clientes potenciales y facilitar el proceso de reserva.",
+      "features": [
+        "Galería de fotos 4K - Visualización detallada de alta fidelidad de todas las áreas de la casa",
+        "Diseño responsivo - Navegación optimizada para smartphones, tablets y desktops",
+        "Integración de contacto - Botones flotantes para reserva directa vía WhatsApp y Airbnb",
+        "Animaciones envolventes - Uso estratégico de Framer Motion para guiar la mirada del usuario",
+        "Optimización de rendimiento - Carga rápida de imágenes pesadas a través de Next.js Image",
+        "SEO estratégico - Implementación de metadados y estructura semántica para visibilidad orgánica"
+      ],
+      "challenges": "El principal desafío fue equilibrar el uso de imágenes de alta resolución con un rendimiento de carga excepcional. La solución involucró técnicas avanzadas de lazy loading y optimización de activos nativos de Next.js, asegurando que el lujo de la casa se transmitiera sin comprometer la velocidad.",
+      "highlights": [
+        "Experiencia Inmersiva",
+        "Diseño Responsivo",
+        "Optimización de Rendimiento"
+      ],
+      "year": "2024",
       "role": "Desarrollador Full Stack"
     }
   },
@@ -113,57 +102,80 @@
       "desc2": "Creación de base de Squads y área de facturación, con reconocimiento directo del cliente."
     },
     "company2": {
-      "role": "Consultor Técnico Trainee",
-      "period": "09/2024 — 06/2025",
-      "desc1": "Desarrollo con JavaScript y Flow Designer, integraciones REST utilizando Postman.",
-      "desc2": "Interacción directa con el cliente y uso de Azure DevOps para gestión de tareas."
+      "role": "Analista de Soporte Técnico",
+      "period": "02/2024 — 07/2025",
+      "desc1": "Atención N1 y N2 en plataforma ServiceNow, soporte a usuarios y automatización básica.",
+      "desc2": "Enfoque en Customer Experience y Service Management (ITSM)."
     },
     "company3": {
-      "role": "Académico / Freelancer",
-      "period": "2023 — 2024",
-      "desc1": "Desarrollo de proyectos académicos y personales para consolidar conocimientos en Full Stack.",
-      "desc2": "Enfoque en aprendizaje continuo y aplicación práctica de conceptos de ingeniería de software."
+      "role": "Pasante de TI",
+      "period": "08/2023 — 02/2024",
+      "desc1": "Soporte técnico general y asistencia en mantenimiento de infraestructura.",
+      "desc2": "Primer contacto profesional con entornos corporativos de TI."
     }
   },
   "education": {
-    "title": "Formación Académica",
-    "expand": "Expandir sección de formación",
+    "title": "Educación",
+    "expand": "Expandir sección de educación",
     "clickToExpand": "Clic para expandir",
     "inProgress": "En curso",
-    "highlights": "Destacados",
+    "highlights": "Aspectos destacados",
     "institution1": {
       "name": "FIAP",
       "degree": "Ingeniería de Software",
-      "period": "2024 — 2027 (Previsto)",
-      "description": "4er semestre en curso. Enfoque en prácticas modernas de desarrollo, arquitectura e innovación."
+      "period": "2024 — 2027 (Previsión)",
+      "description": "4º semestre en curso. Enfoque en prácticas modernas de desarrollo, arquitectura e innovación."
     },
     "institution2": {
       "name": "UFBA",
-      "degree": "Iniciación en Programación (C++)",
-      "period": "2023",
-      "description": "Base sólida en programación C++, algoritmos y lógica de programación."
+      "degree": "Ingeniería de Computación",
+      "period": "2022 — 2024",
+      "description": "Base sólida en algoritmos, estructuras de datos y programación C++."
     }
   },
   "journey": {
     "title": "Trayectoria",
-    "subtitle": "Una visión cronológica de mi experiencia profesional y formación académica"
-  },
-  "techStack": {
-    "title": "Tech Stack",
-    "subtitle": "Herramientas que utilizo",
-    "footer": "Y mucho más..."
+    "subtitle": "Una línea de tiempo de mi evolución profesional y educativa.",
+    "expand": "Expandir línea del tiempo",
+    "present": {
+      "title": "Presente",
+      "description": "Consolidando mi carrera como Ingeniero de Software Full Stack en AOOP."
+    },
+    "future": {
+      "title": "Futuro",
+      "description": "Enfoque en arquitecturas escalables, IA y liderazgo técnico."
+    }
   },
   "contact": {
-    "subtitle": "¿Qué sigue?",
-    "title": "Ponte en Contacto",
-    "description": "Estoy abierto a nuevas oportunidades y siempre emocionado de conectar con otros desarrolladores.",
-    "button": "Di Hola"
+    "title": "Contacto",
+    "subtitle": "Hablemos",
+    "description": "Siempre estoy abierto a nuevos proyectos, colaboraciones o simplemente un café virtual. ¡No dudes en contactarme!",
+    "emailLabel": "Correo",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "locationLabel": "Ubicación",
+    "locationValue": "Salvador, Bahía — Brasil",
+    "formName": "Nombre",
+    "formEmail": "Correo",
+    "formSubject": "Asunto",
+    "formMessage": "Mensaje",
+    "formSubmit": "Enviar Mensaje",
+    "formSending": "Enviando...",
+    "formSuccess": "¡Mensaje enviado con éxito!",
+    "formError": "Ocurrió un error al enviar. Inténtalo de nuevo.",
+    "button": "Diga Hola"
   },
   "footer": {
-    "tagline": "Diseñado & Construido con pasión",
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Desarrollado con Next.js, Tailwind CSS y Framer Motion.",
+    "tagline": "Desarrollador Full Stack apasionado por crear experiencias digitales increíbles.",
     "copyright": "Todos los derechos reservados.",
-    "socialGithub": "Perfil de GitHub",
-    "socialLinkedin": "Perfil de LinkedIn",
-    "socialTwitter": "Perfil de Twitter"
+    "socialGithub": "GitHub",
+    "socialLinkedin": "LinkedIn"
+  },
+  "techStack": {
+    "title": "Mi Stack Tecnológico",
+    "subtitle": "Un ecosistema robusto de herramientas que utilizo para crear soluciones excepcionales.",
+    "footer": "Siempre aprendiendo y explorando nuevas fronteras tecnológicas."
   }
 }

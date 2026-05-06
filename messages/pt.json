@@ -46,45 +46,8 @@
     "videoPresentation": "Apresentação em Vídeo",
     "videoDescription": "Assista a uma demonstração completa do projeto em ação.",
     "videoNotSupported": "Seu navegador não suporta a reprodução de vídeo.",
+    "viewOnline": "Ver Online",
     "project1": {
-      "title": "Clínica Dr. Wallace Victor",
-      "description": "Sistema de agendamento médico online desenvolvido com React, Node.js, Express e AWS RDS. Full Stack.",
-      "detailedDescription": "Sistema completo de agendamento médico desenvolvido para a Clínica Dr. Wallace Victor. A aplicação permite que pacientes realizem agendamentos online de forma intuitiva, visualizem horários disponíveis e recebam confirmações automáticas. O sistema inclui painel administrativo completo para gestão de consultas, pacientes e prontuários.",
-      "features": [
-        "Agendamento online - Agende consultas de forma fácil e rápida",
-        "Minha Agenda - Visualize, cancele e reagende suas consultas",
-        "Histórico de consultas - Acesse consultas passadas e futuras",
-        "Avaliação pós-consulta - Avalie o atendimento com estrelas e comentários",
-        "Upload de documentos - Envie exames e documentos antes da consulta",
-        "Perfil completo - Gerencie dados pessoais, alergias e contato de emergência",
-        "Lembretes automáticos - Receba lembretes por e-mail 24h e 1h antes",
-        "Exportar para calendário - Sincronize com Google Calendar ou baixe arquivo .ics",
-        "Modo escuro - Alterne entre tema claro e escuro",
-        "PWA - Instale como app no celular",
-        "Dashboard de métricas - Gráficos de consultas, taxa de cancelamento, avaliações",
-        "Calendário visual - Visualize toda a agenda em formato de calendário",
-        "Gestão de pacientes - Busca, listagem e gerenciamento de pacientes",
-        "Gestão de agenda - Bloqueie horários e gerencie disponibilidade",
-        "Avaliações recebidas - Veja feedback dos pacientes"
-      ],
-      "challenges": "O principal desafio foi implementar um sistema de agendamento em tempo real que evitasse conflitos de horários entre múltiplos usuários simultâneos. A solução envolveu o uso de transações SQL e locks otimistas no banco de dados AWS RDS.",
-      "year": "2024",
-      "role": "Desenvolvedor Full Stack"
-    },
-    "project2": {
-      "title": "FocusWave",
-      "description": "API REST desenvolvida em Java utilizando Jersey, JAX-RS e JDBC Oracle, seguindo arquitetura em camadas.",
-      "detailedDescription": "API REST robusta desenvolvida em Java para gerenciamento de dados empresariais. A API segue princípios de arquitetura em camadas (Controller, Service, DAO) oferecendo separação clara de responsabilidades.",
-      "features": [
-        "Arquitetura em camadas (MVC)",
-        "Conexão pool com Oracle Database",
-        "Validação de dados e tratamento de exceções"
-      ],
-      "challenges": "A integração com o banco de dados Oracle exigiu configuração cuidadosa de connection pools e otimização de queries para garantir performance com grandes volumes de dados.",
-      "year": "2024",
-      "role": "Desenvolvedor Backend"
-    },
-    "project3": {
       "title": "Victor Martins Portfolio",
       "description": "Portfólio pessoal desenvolvido para demonstrar habilidades como Engenheiro de Software Full Stack, com foco em UX, design moderno e performance.",
       "detailedDescription": "Portfólio pessoal desenvolvido para demonstrar minhas habilidades como Engenheiro de Software Full Stack, com foco em experiência do usuário (UX), design moderno e performance.",
@@ -94,12 +57,30 @@
         "Modais Expandidos - Visualização detalhada de projetos sem sair da página, com suporte a vídeos, abas de informações e galerias",
         "Feedback Sonoro (UI Sounds) - Efeitos sonoros sutis em interações (clique, hover) para uma experiência mais tátil",
         "Animações Suaves - Transições fluidas utilizando framer-motion e micro-interações",
-        "Download Inteligente de Currículo - Entrega automática do currículo em Inglês ou Português dependendo do idioma selecionado",
+        "Download Inteligente de Currículo - Entrega automática do currículo em Inglês ou Portugués dependendo do idioma selecionado",
         "Totalmente Responsivo - Adaptado perfeitamente para Mobile, Tablet e Desktop",
         "Dark Mode Nativo - Interface desenhada com glassmorphism e cores vibrantes em fundo escuro"
       ],
       "challenges": "O principal desafio foi criar uma experiência de usuário única e memorável, equilibrando design moderno com performance. A implementação de i18n com next-intl exigiu estruturação cuidadosa das traduções e roteamento dinâmico.",
+      "highlights": ["Design Híbrido", "Internacionalização (i18n)", "Animações Suaves"],
       "year": "2025",
+      "role": "Desenvolvedor Full Stack"
+    },
+    "project2": {
+      "title": "Quintas de Sauípe D10",
+      "description": "Plataforma de aluguel para uma casa de luxo em Quinta de Sauípe, desenvolvida com Next.js, Tailwind CSS e Framer Motion.",
+      "detailedDescription": "Landing page premium desenvolvida para promover o aluguel de uma casa de alto padrão no condomínio Quintas de Sauípe. O projeto foca em uma experiência visual rica, utilizando animações suaves e design moderno para atrair clientes em potencial e facilitar o processo de reserva.",
+      "features": [
+        "Galeria de Fotos 4K - Visualização detalhada de todas as áreas da casa com alta fidelidade",
+        "Design Responsivo - Navegação otimizada para smartphones, tablets e desktops",
+        "Integração de Contato - Botões flutuantes para reserva direta via WhatsApp e Airbnb",
+        "Animações Envolventes - Uso estratégico de Framer Motion para guiar o olhar do usuário",
+        "Otimização de Performance - Carregamento rápido de imagens pesadas através do Next.js Image",
+        "SEO Estratégico - Implementación de metadados e estrutura semântica para visibilidade orgânica"
+      ],
+      "challenges": "O principal desafio foi equilibrar o uso de imagens de alta resolução com uma performance de carregamento excepcional. A solução envolveu técnicas avançadas de lazy loading e otimização de assets nativas do Next.js, garantindo que o luxo da casa fosse transmitido sem comprometer a velocidade.",
+      "highlights": ["Experiência Imersiva", "Design Responsivo", "Otimização de Performance"],
+      "year": "2024",
       "role": "Desenvolvedor Full Stack"
     }
   },
@@ -113,21 +94,21 @@
       "desc2": "Criação de base de Squads e área de faturamento, com reconhecimento direto do cliente."
     },
     "company2": {
-      "role": "Consultor Técnico Trainee",
-      "period": "09/2024 – 06/2025",
-      "desc1": "Desenvolvimento com JavaScript e Flow Designer, integrações REST utilizando Postman.",
-      "desc2": "Atuação direta com o cliente e uso de Azure DevOps para gestão de tarefas."
+      "role": "Analista de Suporte Técnico",
+      "period": "02/2024 – 07/2025",
+      "desc1": "Atendimento N1 e N2 em plataforma ServiceNow, suporte a usuários e automação básica.",
+      "desc2": "Foco em Customer Experience e Service Management (ITSM)."
     },
     "company3": {
-      "role": "Acadêmico / Freelancer",
-      "period": "2023 — 2024",
-      "desc1": "Desenvolvimento de projetos acadêmicos e pessoais para consolidar conhecimentos em Full Stack.",
-      "desc2": "Foco em aprendizado contínuo e aplicação prática de conceitos de engenharia de software."
+      "role": "Estagiário de TI",
+      "period": "08/2023 – 02/2024",
+      "desc1": "Suporte técnico geral e auxílio na manutenção de infraestrutura.",
+      "desc2": "Primeiro contato profissional com ambientes corporativos de TI."
     }
   },
   "education": {
-    "title": "Formação Acadêmica",
-    "expand": "Expandir seção de formação",
+    "title": "Educação",
+    "expand": "Expandir seção de educação",
     "clickToExpand": "Clique para expandir",
     "inProgress": "Em andamento",
     "highlights": "Destaques",
@@ -139,31 +120,54 @@
     },
     "institution2": {
       "name": "UFBA",
-      "degree": "Iniciação em Programação (C++)",
-      "period": "2023",
-      "description": "Base sólida em programação C++, algoritmos e lógica de programação."
+      "degree": "Engenharia de Computação",
+      "period": "2022 – 2024",
+      "description": "Base sólida em algoritmos, estrutura de dados e programação C++."
+    }
+  },
+  "journey": {
+    "title": "Minha Jornada",
+    "subtitle": "Uma linha do tempo da minha evolução profissional e educacional.",
+    "expand": "Expandir linha do tempo",
+    "present": {
+      "title": "Presente",
+      "description": "Consolidando carreira como Engenheiro de Software Full Stack na AOOP."
+    },
+    "future": {
+      "title": "Futuro",
+      "description": "Foco em arquiteturas escaláveis, IA e liderança técnica."
     }
   },
   "contact": {
-    "subtitle": "O que vem a seguir?",
-    "title": "Entre em Contato",
-    "description": "Estou aberto a novas oportunidades e sempre animado para conectar com outros desenvolvedores.",
+    "title": "Contato",
+    "subtitle": "Vamos conversar?",
+    "description": "Estou sempre aberto a novos projetos, colaborações ou apenas um café virtual. Sinta-se à vontade para entrar em contato!",
+    "emailLabel": "E-mail",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "locationLabel": "Localização",
+    "locationValue": "Salvador, Bahia - Brasil",
+    "formName": "Nome",
+    "formEmail": "E-mail",
+    "formSubject": "Assunto",
+    "formMessage": "Mensagem",
+    "formSubmit": "Enviar Mensagem",
+    "formSending": "Enviando...",
+    "formSuccess": "Mensagem enviada com sucesso!",
+    "formError": "Ocorreu um erro ao enviar. Tente novamente.",
     "button": "Diga Olá"
   },
-  "journey": {
-    "title": "Jornada",
-    "subtitle": "Uma visão cronológica da minha experiência profissional e formação acadêmica"
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "builtWith": "Desenvolvido com Next.js, Tailwind CSS e Framer Motion.",
+    "tagline": "Desenvolvedor Full Stack apaixonado por criar experiências digitais incríveis.",
+    "copyright": "Todos os direitos reservados.",
+    "socialGithub": "GitHub",
+    "socialLinkedin": "LinkedIn"
   },
   "techStack": {
-    "title": "Tech Stack",
-    "subtitle": "Ferramentas que utilizo",
-    "footer": "E muito mais..."
-  },
-  "footer": {
-    "tagline": "Projetado & Construído com paixão",
-    "copyright": "Todos os direitos reservados.",
-    "socialGithub": "Perfil do GitHub",
-    "socialLinkedin": "Perfil do LinkedIn",
-    "socialTwitter": "Perfil do Twitter"
+    "title": "Minhas Tecnologias",
+    "subtitle": "Um ecossistema robusto de ferramentas que utilizo para criar soluções excepcionais.",
+    "footer": "Sempre aprendendo e explorando novas fronteiras tecnológicas."
   }
 }

@@ -34,7 +34,7 @@ export function ProjectsSection() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {featuredProjects.slice(0, 2).map((project, index) => (
+        {featuredProjects.slice(0, 4).map((project, index) => (
           <div
             key={project.title}
             className="bg-secondary/30 rounded-lg border border-primary/20 p-4 hover:border-primary/40 transition-all"
@@ -84,7 +84,7 @@ export function ProjectsSection() {
             }}
             className="col-span-full w-full p-4 text-primary hover:bg-primary/10 transition-colors rounded-lg border border-dashed border-primary/30 cursor-pointer"
           >
-            Ver todos os projetos
+            {t('viewAllProjects')}
           </button>
         )}
       </div>

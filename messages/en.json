@@ -46,45 +46,8 @@
     "videoPresentation": "Video Presentation",
     "videoDescription": "Watch a complete demonstration of the project in action.",
     "videoNotSupported": "Your browser does not support video playback.",
+    "viewOnline": "View Online",
     "project1": {
-      "title": "Clínica Dr. Wallace Victor",
-      "description": "Online medical appointment system developed with React, Node.js, Express, and AWS RDS. Full Stack.",
-      "detailedDescription": "Complete medical appointment system developed for Dr. Wallace Victor Clinic. The application allows patients to schedule appointments online intuitively, view available times, and receive automatic confirmations. The system includes a complete administrative panel for managing appointments, patients, and medical records.",
-      "features": [
-        "Online scheduling - Schedule appointments easily and quickly",
-        "My Schedule - View, cancel, and reschedule your appointments",
-        "Appointment history - Access past and future appointments",
-        "Post-consultation evaluation - Rate the service with stars and comments",
-        "Document upload - Send exams and documents before the consultation",
-        "Complete profile - Manage personal data, allergies, and emergency contact",
-        "Automatic reminders - Receive email reminders 24h and 1h before",
-        "Export to calendar - Sync with Google Calendar or download .ics file",
-        "Dark mode - Switch between light and dark theme",
-        "PWA - Install as an app on your phone",
-        "Metrics dashboard - Charts of appointments, cancellation rate, reviews",
-        "Visual calendar - View entire schedule in calendar format",
-        "Patient management - Search, list, and manage patients",
-        "Schedule management - Block time slots and manage availability",
-        "Received reviews - See patient feedback"
-      ],
-      "challenges": "The main challenge was implementing a real-time scheduling system that would prevent time conflicts between multiple simultaneous users. The solution involved using SQL transactions and optimistic locks in the AWS RDS database.",
-      "year": "2024",
-      "role": "Full Stack Developer"
-    },
-    "project2": {
-      "title": "FocusWave",
-      "description": "REST API developed in Java using Jersey, JAX-RS, and JDBC Oracle, following layered architecture.",
-      "detailedDescription": "Robust REST API developed in Java for enterprise data management. The API follows layered architecture principles (Controller, Service, DAO) offering clear separation of responsibilities.",
-      "features": [
-        "Layered architecture (MVC)",
-        "Connection pool with Oracle Database",
-        "Data validation and exception handling"
-      ],
-      "challenges": "Integration with the Oracle database required careful configuration of connection pools and query optimization to ensure performance with large volumes of data.",
-      "year": "2024",
-      "role": "Backend Developer"
-    },
-    "project3": {
       "title": "Victor Martins Portfolio",
       "description": "Personal portfolio developed to demonstrate Full Stack Software Engineer skills, focusing on UX, modern design and performance.",
       "detailedDescription": "Personal portfolio developed to demonstrate my skills as a Full Stack Software Engineer, with focus on user experience (UX), modern design and performance.",
@@ -99,7 +62,25 @@
         "Native Dark Mode - Interface designed with glassmorphism and vibrant colors on dark background"
       ],
       "challenges": "The main challenge was creating a unique and memorable user experience, balancing modern design with performance. The i18n implementation with next-intl required careful structuring of translations and dynamic routing.",
+      "highlights": ["Hybrid Design", "Internationalization (i18n)", "Smooth Animations"],
       "year": "2025",
+      "role": "Full Stack Developer"
+    },
+    "project2": {
+      "title": "Quintas de Sauípe D10",
+      "description": "Rental platform for a luxury house in Quintas de Sauípe, developed with Next.js, Tailwind CSS, and Framer Motion.",
+      "detailedDescription": "Premium landing page developed to promote the rental of a high-standard house in the Quintas de Sauípe condominium. The project focuses on a rich visual experience, using smooth animations and modern design to attract potential clients and facilitate the booking process.",
+      "features": [
+        "4K Photo Gallery - Detailed high-fidelity view of all areas of the house",
+        "Responsive Design - Optimized navigation for smartphones, tablets, and desktops",
+        "Contact Integration - Floating buttons for direct booking via WhatsApp and Airbnb",
+        "Engaging Animations - Strategic use of Framer Motion to guide the user's eye",
+        "Performance Optimization - Fast loading of heavy images via Next.js Image",
+        "Strategic SEO - Implementation of metadata and semantic structure for organic visibility"
+      ],
+      "challenges": "The main challenge was balancing the use of high-resolution images with exceptional loading performance. The solution involved advanced lazy loading techniques and native Next.js asset optimization, ensuring that the luxury of the house was conveyed without compromising speed.",
+      "highlights": ["Immersive Experience", "Responsive Design", "Performance Optimization"],
+      "year": "2024",
       "role": "Full Stack Developer"
     }
   },
@@ -113,16 +94,16 @@
       "desc2": "Creation of Squads base and billing area, with direct recognition from the client."
     },
     "company2": {
-      "role": "Technical Consultant Trainee",
-      "period": "09/2024 – 06/2025",
-      "desc1": "Development with JavaScript and Flow Designer, REST integrations using Postman.",
-      "desc2": "Direct interaction with the client and use of Azure DevOps for task management."
+      "role": "Technical Support Analyst",
+      "period": "02/2024 – 07/2025",
+      "desc1": "N1 and N2 service in ServiceNow platform, user support and basic automation.",
+      "desc2": "Focus on Customer Experience and Service Management (ITSM)."
     },
     "company3": {
-      "role": "Academic / Freelancer",
-      "period": "2023 — 2024",
-      "desc1": "Development of academic and personal projects to consolidate Full Stack knowledge.",
-      "desc2": "Focus on continuous learning and practical application of software engineering concepts."
+      "role": "IT Intern",
+      "period": "08/2023 – 02/2024",
+      "desc1": "General technical support and assistance in infrastructure maintenance.",
+      "desc2": "First professional contact with corporate IT environments."
     }
   },
   "education": {
@@ -139,31 +120,54 @@
     },
     "institution2": {
       "name": "UFBA",
-      "degree": "Programming Initiation (C++)",
-      "period": "2023",
-      "description": "Solid foundation in C++ programming, algorithms, and programming logic."
+      "degree": "Computer Engineering",
+      "period": "2022 – 2024",
+      "description": "Solid foundation in algorithms, data structures, and C++ programming."
+    }
+  },
+  "journey": {
+    "title": "My Journey",
+    "subtitle": "A timeline of my professional and educational evolution.",
+    "expand": "Expand timeline",
+    "present": {
+      "title": "Present",
+      "description": "Consolidating career as a Full Stack Software Engineer at AOOP."
+    },
+    "future": {
+      "title": "Future",
+      "description": "Focus on scalable architectures, IA and technical leadership."
     }
   },
   "contact": {
-    "subtitle": "What's Next?",
-    "title": "Get In Touch",
-    "description": "I'm open to new opportunities and always excited to connect with other developers.",
+    "title": "Contact",
+    "subtitle": "Let's Talk",
+    "description": "I'm always open to new projects, collaborations or just a virtual coffee. Feel free to get in touch!",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub",
+    "locationLabel": "Location",
+    "locationValue": "Salvador, Bahia - Brazil",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formSubmit": "Send Message",
+    "formSending": "Sending...",
+    "formSuccess": "Message sent successfully!",
+    "formError": "An error occurred while sending. Try again.",
     "button": "Say Hello"
   },
-  "journey": {
-    "title": "Journey",
-    "subtitle": "A chronological view of my professional experience and educational background"
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, Tailwind CSS and Framer Motion.",
+    "tagline": "Full Stack Developer passionate about creating amazing digital experiences.",
+    "copyright": "All rights reserved.",
+    "socialGithub": "GitHub",
+    "socialLinkedin": "LinkedIn"
   },
   "techStack": {
-    "title": "Tech Stack",
-    "subtitle": "Tools I use",
-    "footer": "And much more..."
-  },
-  "footer": {
-    "tagline": "Designed & Built with passion",
-    "copyright": "All rights reserved.",
-    "socialGithub": "GitHub Profile",
-    "socialLinkedin": "LinkedIn Profile",
-    "socialTwitter": "Twitter Profile"
+    "title": "My Tech Stack",
+    "subtitle": "A robust ecosystem of tools I use to build exceptional solutions.",
+    "footer": "Always learning and exploring new technological frontiers."
   }
 }

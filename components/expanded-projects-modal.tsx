@@ -12,58 +12,6 @@ type DetailTab = 'info' | 'video';
 
 export const featuredProjects = [
   {
-    title: "Clínica Dr. Wallace Victor",
-    description:
-      "Sistema de agendamento médico online desenvolvido com React, Node.js, Express e AWS RDS. Full Stack.",
-    technologies: ["React", "Node.js", "Express", "AWS RDS", "JavaScript", "HTML5", "CSS3"],
-    github: "https://github.com/EmperorOfCoding",
-    live: "https://website-dr-wallace-victor.vercel.app/",
-    image: "/images/projects/dr-wallace-victor.png",
-    video: "/videos/projects/dr-wallace-victor.mp4", // Local video or YouTube URL
-    highlights: ["Agendamento Online", "Gestão de Pacientes", "Arquitetura Cloud"],
-    detailedDescription: "Sistema completo de agendamento médico desenvolvido para a Clínica Dr. Wallace Victor. A aplicação permite que pacientes realizem agendamentos online de forma intuitiva, visualize horários disponíveis e recebam confirmações automáticas. O sistema inclui painel administrativo para gestão de consultas, pacientes e prontuários.",
-    features: [
-      "Agendamento online - Agende consultas de forma fácil e rápida",
-      "Minha Agenda - Visualize, cancele e reagende suas consultas",
-      "Histórico de consultas - Acesse consultas passadas e futuras",
-      "Avaliação pós-consulta - Avalie o atendimento com estrelas e comentários",
-      "Upload de documentos - Envie exames e documentos antes da consulta",
-      "Perfil completo - Gerencie dados pessoais, alergias e contato de emergência",
-      "Lembretes automáticos - Receba lembretes por e-mail 24h e 1h antes",
-      "Exportar para calendário - Sincronize com Google Calendar ou baixe arquivo .ics",
-      "Modo escuro - Alterne entre tema claro e escuro",
-      "PWA - Instale como app no celular",
-      "Dashboard de métricas - Gráficos de consultas, taxa de cancelamento, avaliações",
-      "Calendário visual - Visualize toda a agenda em formato de calendário",
-      "Gestão de pacientes - Busca, listagem e gerenciamento de pacientes",
-      "Gestão de agenda - Bloqueie horários e gerencie disponibilidade",
-      "Avaliações recebidas - Veja feedback dos pacientes"
-    ],
-    challenges: "O principal desafio foi implementar um sistema de agendamento em tempo real que evitasse conflitos de horários entre múltiplos usuários simultâneos. A solução envolveu o uso de transações SQL e locks otimistas no banco de dados AWS RDS.",
-    year: "2024",
-    role: "Desenvolvedor Full Stack"
-  },
-  {
-    title: "FocusWave",
-    description:
-      "API REST desenvolvida em Java utilizando Jersey, JAX-RS e JDBC Oracle, seguindo arquitetura em camadas.",
-    technologies: ["Java", "Jersey", "JAX-RS", "Oracle JDBC", "JDBC", "Maven"],
-    github: "https://github.com/Code-Masters-F/2025_GlobalSolution-2",
-    live: "https://global-solution-2-2025.vercel.app/",
-    image: "/images/projects/focuswaveprojeto.png",
-    video: "https://www.youtube.com/watch?v=7gBjv-byUK4",
-    highlights: ["API RESTful", "Arquitetura em Camadas", "Integração Oracle"],
-    detailedDescription: "API REST robusta desenvolvida em Java para gerenciamento de dados empresariais. A API segue princípios de arquitetura em camadas (Controller, Service, DAO) oferecendo separação clara de responsabilidades. Implementa autenticação JWT e documentação Swagger.",
-    features: [
-      "Arquitetura em camadas (MVC)",
-      "Conexão pool com Oracle Database",
-      "Validação de dados e tratamento de exceções"
-    ],
-    challenges: "A integração com o banco de dados Oracle exigiu configuração cuidadosa de connection pools e otimização de queries para garantir performance com grandes volumes de dados.",
-    year: "2024",
-    role: "Desenvolvedor Backend"
-  },
-  {
     title: "Victor Martins Portfolio",
     description:
       "Portfólio pessoal desenvolvido com Next.js 15, React 19, TypeScript e Tailwind CSS v4. Design moderno com i18n e animações.",
@@ -86,6 +34,29 @@ export const featuredProjects = [
     ],
     challenges: "O principal desafio foi criar uma experiência de usuário única e memorável, equilibrando design moderno com performance. A implementação de i18n com next-intl exigiu estruturação cuidadosa das traduções e roteamento dinâmico.",
     year: "2025",
+    role: "Desenvolvedor Full Stack"
+  },
+  {
+    title: "Quintas de Sauípe D10",
+    description:
+      "Plataforma de aluguel para uma casa de luxo em Quintas de Sauípe, desenvolvida com Next.js, Tailwind CSS e Framer Motion.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/EmperorOfCoding/quintasdesauiped10",
+    live: "https://www.quintasdesauiped10.com.br/",
+    image: "/images/projects/quintas-sauipe.png",
+    video: "",
+    highlights: ["Experiência Imersiva", "Design Responsivo", "Otimização de Performance"],
+    detailedDescription: "Landing page premium desenvolvida para promover o aluguel de uma casa de alto padrão no condomínio Quintas de Sauípe. O projeto foca em uma experiência visual rica, utilizando animações suaves e design moderno para atrair clientes em potencial.",
+    features: [
+      "Galeria de Fotos 4K - Visualização detalhada de todas as áreas da casa",
+      "Design Responsivo - Navegação perfeita em qualquer dispositivo",
+      "Integração de Contato - Botões diretos para reserva via WhatsApp e Airbnb",
+      "Animações Fluídas - Uso de Framer Motion para uma navegação envolvente",
+      "Performance Otimizada - Carregamento inteligente de assets e imagens",
+      "SEO & Analytics - Implementação completa para visibilidade e métricas"
+    ],
+    challenges: "O desafio foi criar uma interface que transmitisse o luxo e a tranquilidade da casa, mantendo a performance e SEO otimizados para motores de busca.",
+    year: "2024",
     role: "Desenvolvedor Full Stack"
   },
 ];
@@ -383,7 +354,7 @@ export function ExpandedProjectsModal() {
                       className="flex items-center gap-2 px-3 py-2 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary text-sm transition-colors"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      <span className="hidden sm:inline">Ver Online</span>
+                      <span className="hidden sm:inline">{t('viewOnline')}</span>
                     </a>
                   </div>
                 </div>

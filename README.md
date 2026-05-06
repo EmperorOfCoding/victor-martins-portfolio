@@ -15,11 +15,19 @@ Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvi
 *   **Totalmente Responsivo:** Adaptado perfeitamente para Mobile, Tablet e Desktop.
 *   **Dark Mode Nativo:** Interface desenhada com glassmorphism e cores vibrantes em fundo escuro.
 
+## 📂 Projetos em Destaque
+
+Alguns dos projetos demonstrados neste portfólio:
+
+*   **Quintas de Sauípe D10:** Landing page premium para aluguel de luxo ([Live](https://www.quintasdesauiped10.com.br/)).
+*   **Vinheria Agnello:** E-commerce especializado em vinhos premium.
+*   **Tech Analytics:** Dashboard de análise de dados em tempo real.
+
 ## 🛠️ Tecnologias Utilizadas
 
 Este projeto foi construído com as tecnologias mais recentes do ecossistema React:
 
-*   **Core:** [Next.js 15](https://nextjs.org/) (App Router), [React 19](https://react.dev/)
+*   **Core:** [Next.js 16](https://nextjs.org/) (App Router), [React 19](https://react.dev/)
 *   **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
 *   **Estilização:** [Tailwind CSS v4](https://tailwindcss.com/)
 *   **Animações:** [Framer Motion](https://www.framer.com/motion/)
